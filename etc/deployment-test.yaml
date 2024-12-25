@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ada-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ada-web
+  template:
+    metadata:
+      labels:
+        app: ada-web
+    spec:
+      containers:
+      - name: ada-web
+        image: adatestacr.azurecr.io/ada-test-ns/ada-web:1
+        ports:
+            - containerPort: 8090
+        resources: {}
+      restartPolicy: Always
+status: {}      

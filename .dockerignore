@@ -1,0 +1,10 @@
+node_modules
+README.md
+.gitignore
+.env.dev
+.env.prod
+.env.qa
+.env.staging
+.env.example
+.git
+dist

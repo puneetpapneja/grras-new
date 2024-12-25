@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.env.qa
+.env.prod
+.env.staging
+.env.dev
+.env.aws
