@@ -68,12 +68,18 @@ const Header = () => {
           {/* Social Media Links */}
           <SocialMedia />
           {!isMobile && (
-            <Typography
-              variant="h7"
-              sx={{ color: 'floralwhite', display: 'flex', alignItems: 'center' }}
-            >
-              Red Hat Authorized Training and Certification Partner since 2008
-            </Typography>
+           <Typography
+           variant="body2"
+           sx={{
+             color: 'floralwhite',
+             display: 'flex',
+             alignItems: 'center',
+             animation: 'blink 1s infinite'
+           }}
+         >
+           Red Hat Authorized Training and Certification Partner since 2008
+         </Typography>
+        
           )}
           {/* Contact Details */}
           <Contact />
@@ -84,7 +90,8 @@ const Header = () => {
                 color: 'floralwhite',
                 display: 'flex',
                 alignItems: 'center',
-                fontSize: 'x-small'
+                fontSize: 'x-small',
+                animation: 'blink 1s infinite'
               }}
             >
               Red Hat Authorized Training and Certification Partner since 2008
@@ -219,7 +226,7 @@ const Header = () => {
                     slotProps={{
                       paper: {
                         sx: {
-                          top: '90px !important', // Adjust the top position
+                          top: '140px !important', // Adjust the top position
                           boxShadow: '0px 4px 10px rgba(0,0,0,0.1)', // Optional styling
                           padding: 2, // Optional padding
                           overflow: 'auto',
@@ -273,6 +280,7 @@ const Header = () => {
           )}
         </Toolbar>
       </AppBar>
+      
     </>
   );
 };

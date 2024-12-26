@@ -81,3 +81,12 @@ body {
 .contact:hover {
   text-decoration: underline;
 }
+
+@keyframes blink {
+  0%, 100% {
+    color: floralwhite;
+  }
+  50% {
+    color: red;
+  }
+}
