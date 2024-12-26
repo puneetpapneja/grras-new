@@ -67,15 +67,21 @@ const Header = () => {
         >
           {/* Social Media Links */}
           <SocialMedia />
+          {!isMobile && <Typography variant="h7" sx={{ color: "floralwhite", display: "flex", alignItems: "center" }}>
+              Red Hat Authorized Training and Certification Partner since 2008
+            </Typography>}
           {/* Contact Details */}
           <Contact />
+          {isMobile && <Typography variant="body2" sx={{ color: "floralwhite", display: "flex", alignItems: "center",fontSize: 'x-small' }}>
+              Red Hat Authorized Training and Certification Partner since 2008
+            </Typography>}
         </Toolbar>
       </AppBar>
 
       <AppBar position="static" sx={{ backgroundColor: "white", boxShadow: "none", }}>
         <Toolbar>
           {/* Logo */}
-          <Typography variant="h6" sx={{ color: "black", display: "flex", alignItems: "center"  }}>
+          <Typography variant="h6" sx={{ color: "black", display: "flex", alignItems: "center" }}>
             <img
               src="assets/images/logo.jpg"
               alt="Logo"
@@ -169,14 +175,18 @@ const Header = () => {
                 key={index}
                 onMouseEnter={(e) => handleMenuOpen(e, menu.label)}
                 onMouseLeave={handleMenuClose}
-                sx={{ position: "relative", display: "inline-block", marginLeft: "16px" }}
+                sx={{ position: "relative", display: "inline-block", marginLeft: "16px", }}
               >
                 <Button
                   sx={{
-                    color: "black",
+                    color: hoveredMenu === menu.label ? "#1976d2" : "black",
                     textTransform: "none",
                     fontWeight: "bold",
                     margin: "0 10px",
+                    "&:hover": {
+                      color: "#1976d2 ", // Hover color for button text
+                      backgroundColor: "transparent", // Ensure no background color is added
+                    },
                   }}
                 >
                   {menu.label}
@@ -195,17 +205,31 @@ const Header = () => {
                           top: "140px !important", // Adjust the top position
                           boxShadow: "0px 4px 10px rgba(0,0,0,0.1)", // Optional styling
                           padding: 2, // Optional padding
-                          overflow: 'auto'
+                          overflow: 'auto',
+                          "& .MuiMenuItem-root:hover": {
+                            backgroundColor: "#f0f0f0", // Hover background color
+                            color: "#1976d2", // Hover text color
+                          },
                         },
                       },
                     }}
                   >
-                    <Grid2 container spacing={2} sx={{ minWidth: "500px" }}>
+                    <Grid2 container spacing={1} sx={{ minWidth: "100px" }}>
                       {menu.children.map((child, childIndex) => (
                         <Grid2 item xs={2} key={childIndex}>
-                          <Typography variant="subtitle1" sx={{ fontWeight: "bold", mb: 1 }}>
+                          {child?.children?.length ? (
+                            <Typography variant="subtitle1" sx={{ fontWeight: "bold", mb: 1, minHeight: 28 }}>
                             {child.label}
                           </Typography>
+                          ) : <MenuItem key={`menu_item_${childIndex}`}>
+                          <a
+                            href={child.link}
+                            style={{ textDecoration: "none", color: "inherit" }}
+                          >
+                            {child.label}
+                          </a>
+                        </MenuItem>}
+                          
                           {child.children &&
                             child.children.map((subChild, subIndex) => (
                               <MenuItem key={subIndex}>

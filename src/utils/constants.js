@@ -30,19 +30,21 @@ export const MENUES = [
           { label: "Certified Kubernetes Administrator (CKA)", link: SLUGS.CKA },
         ]
        },
-      { label: "Kubernetes",
+      { label: "Docker",
         children: [
-          { label: "Certified Kubernetes Administrator (CKA)", link: SLUGS.CKA },
+          { label: "Docker Container Training", link: SLUGS.DOCKER_CONTAINER_TRANING },
         ]
        },
-      { label: "Kubernetes",
+      { label: "AWS",
         children: [
-          { label: "Certified Kubernetes Administrator (CKA)", link: SLUGS.CKA },
+          { label: "AWS Solutions Architect – Associate", link: SLUGS.AWS_Solutions_Architect_Associate },
         ]
        },
        {
         label: "DevOps",
-        link:""
+        children: [
+          { label: "Certified Kubernetes Administrator (CKA)", link: SLUGS.CKA },
+        ]
       },
       {
         label: "Red Hat",
@@ -61,6 +63,11 @@ export const MENUES = [
           { label: "RH415 (Red Hat Security: Linux in Physical, Virtual, and Cloud)", link: SLUGS.RH415 },
           { label: "RH358 (Red Hat Services Management and Automation)", link: SLUGS.RH358 },
           { label: "DO316 (Red Hat Virtualization with OpenShift)", link: SLUGS.REDHAT_OPENSHIFT },
+        ],
+      },
+      {
+        label: "",
+        children: [
           { label: "OpenShift AI", link: SLUGS.OPENSHIFT_AI },
           
         ],
@@ -68,4 +75,11 @@ export const MENUES = [
       
     ],
   },
+  { label: "Degree Programs", children: [
+    {label: "BCA Degree Program" , link: SLUGS.BCA_DEGREE_PROGRAM}
+  ] },
+  { label: "Internship", children: [
+    {label: "Summer Internship" , link: SLUGS.SUMMER_INTERNSHIP_TRANING},
+    {label: "Winter Internship" , link: SLUGS.WINTER_INTERNSHIP_TRANING}
+  ] },
 ];
