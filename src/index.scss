@@ -83,10 +83,23 @@ body {
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     color: floralwhite;
   }
   50% {
     color: red;
   }
+}
+
+.selected-child {
+  background-color: #ddd !important;
+}
+
+.selected-child > a {
+  color: black !important;
+}
+
+.selected-sub-child > a:hover {
+  color: red;
 }

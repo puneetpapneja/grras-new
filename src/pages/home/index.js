@@ -4,6 +4,7 @@ import React from 'react';
 
 const HomePage = () => {
   return <Slider />;
+  // return <div></div>
 };
 
 export default HomePage;
