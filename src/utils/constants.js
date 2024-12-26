@@ -1,5 +1,3 @@
-import { link } from "d3";
-
 export const SLUGS = {
   RHCSA: 'rhcsa-training',
   RHCE: 'rhce-training',
@@ -17,69 +15,71 @@ export const SLUGS = {
   BCA_DEGREE_PROGRAM: 'bca-training',
   MCA_DEGREE_PROGRAM: 'mca-traning',
   SUMMER_INTERNSHIP_TRANING: 'summer-internship',
-  WINTER_INTERNSHIP_TRANING: 'winter-internship',
-}
+  WINTER_INTERNSHIP_TRANING: 'winter-internship'
+};
 
 export const MENUES = [
-  { label: "About", link: "#" },
+  { label: 'About', link: '#' },
   {
-    label: "Training & Certifications",
+    label: 'Training & Certifications',
     children: [
-      { label: "Kubernetes",
+      {
+        label: 'Kubernetes',
+        children: [{ label: 'Certified Kubernetes Administrator (CKA)', link: SLUGS.CKA }]
+      },
+      {
+        label: 'Docker',
+        children: [{ label: 'Docker Container Training', link: SLUGS.DOCKER_CONTAINER_TRANING }]
+      },
+      {
+        label: 'AWS',
         children: [
-          { label: "Certified Kubernetes Administrator (CKA)", link: SLUGS.CKA },
-        ]
-       },
-      { label: "Docker",
-        children: [
-          { label: "Docker Container Training", link: SLUGS.DOCKER_CONTAINER_TRANING },
-        ]
-       },
-      { label: "AWS",
-        children: [
-          { label: "AWS Solutions Architect – Associate", link: SLUGS.AWS_Solutions_Architect_Associate },
-        ]
-       },
-       {
-        label: "DevOps",
-        children: [
-          { label: "Certified Kubernetes Administrator (CKA)", link: SLUGS.CKA },
+          {
+            label: 'AWS Solutions Architect – Associate',
+            link: SLUGS.AWS_Solutions_Architect_Associate
+          }
         ]
       },
       {
-        label: "Red Hat",
-        children: [
-          { label: "RHCSA (Red Hat Certified System Administrator)", link: SLUGS.RHCSA },
-          { label: "RHCE (Red Hat Certified Engineer)", link: SLUGS.RHCE },
-          { label: "DO188 (Red Hat OpenShift Development I)", link: SLUGS.DO188 },
-          { label: "DO280 (Red Hat OpenShift Administration I)", link: SLUGS.DO280 },
-          
-        ],
+        label: 'DevOps',
+        children: [{ label: 'Certified Kubernetes Administrator (CKA)', link: SLUGS.CKA }]
       },
       {
-        label: "",
+        label: 'Red Hat',
         children: [
-          { label: "DO380 (Red Hat OpenShift Administration II)", link: SLUGS.DO380 },
-          { label: "RH415 (Red Hat Security: Linux in Physical, Virtual, and Cloud)", link: SLUGS.RH415 },
-          { label: "RH358 (Red Hat Services Management and Automation)", link: SLUGS.RH358 },
-          { label: "DO316 (Red Hat Virtualization with OpenShift)", link: SLUGS.REDHAT_OPENSHIFT },
-        ],
+          { label: 'RHCSA (Red Hat Certified System Administrator)', link: SLUGS.RHCSA },
+          { label: 'RHCE (Red Hat Certified Engineer)', link: SLUGS.RHCE },
+          { label: 'DO188 (Red Hat OpenShift Development I)', link: SLUGS.DO188 },
+          { label: 'DO280 (Red Hat OpenShift Administration I)', link: SLUGS.DO280 }
+        ]
       },
       {
-        label: "",
+        label: '',
         children: [
-          { label: "OpenShift AI", link: SLUGS.OPENSHIFT_AI },
-          
-        ],
+          { label: 'DO380 (Red Hat OpenShift Administration II)', link: SLUGS.DO380 },
+          {
+            label: 'RH415 (Red Hat Security: Linux in Physical, Virtual, and Cloud)',
+            link: SLUGS.RH415
+          },
+          { label: 'RH358 (Red Hat Services Management and Automation)', link: SLUGS.RH358 },
+          { label: 'DO316 (Red Hat Virtualization with OpenShift)', link: SLUGS.REDHAT_OPENSHIFT }
+        ]
       },
-      
-    ],
+      {
+        label: '',
+        children: [{ label: 'OpenShift AI', link: SLUGS.OPENSHIFT_AI }]
+      }
+    ]
   },
-  { label: "Degree Programs", children: [
-    {label: "BCA Degree Program" , link: SLUGS.BCA_DEGREE_PROGRAM}
-  ] },
-  { label: "Internship", children: [
-    {label: "Summer Internship" , link: SLUGS.SUMMER_INTERNSHIP_TRANING},
-    {label: "Winter Internship" , link: SLUGS.WINTER_INTERNSHIP_TRANING}
-  ] },
+  {
+    label: 'Degree Programs',
+    children: [{ label: 'BCA Degree Program', link: SLUGS.BCA_DEGREE_PROGRAM }]
+  },
+  {
+    label: 'Internship',
+    children: [
+      { label: 'Summer Internship', link: SLUGS.SUMMER_INTERNSHIP_TRANING },
+      { label: 'Winter Internship', link: SLUGS.WINTER_INTERNSHIP_TRANING }
+    ]
+  }
 ];
