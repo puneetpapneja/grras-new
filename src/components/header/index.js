@@ -151,7 +151,13 @@ const Header = () => {
                     {MENUES.map((menu, index) => (
                       <React.Fragment key={index}>
                         <ListItem button onClick={() => handleSubMenuToggle(menu.label)}>
-                          {menu?.children ? <ListItemText primary={menu.label} /> : <Link to={menu.link} className='link'>{menu.label}</Link>}
+                          {menu?.children ? (
+                            <ListItemText primary={menu.label} />
+                          ) : (
+                            <Link to={menu.link} className="link">
+                              {menu.label}
+                            </Link>
+                          )}
                           {menu.children ? (
                             openSubMenus[menu.label] ? (
                               <ExpandLessIcon />
@@ -172,7 +178,13 @@ const Header = () => {
                                       child.children ? handleSubMenuToggle(child.label) : null
                                     }
                                   >
-                                    {child?.children ? <ListItemText primary={child.label} /> : <Link to={child.link} className='link'>{child.label}</Link>}
+                                    {child?.children ? (
+                                      <ListItemText primary={child.label} />
+                                    ) : (
+                                      <Link to={child.link} className="link">
+                                        {child.label}
+                                      </Link>
+                                    )}
                                     {child.children ? (
                                       openSubMenus[child.label] ? (
                                         <ExpandLessIcon />
@@ -190,10 +202,7 @@ const Header = () => {
                                       <List component="div" disablePadding>
                                         {child.children.map((subChild, subIndex) => (
                                           <ListItem button key={subIndex} sx={{ pl: 6 }}>
-                                            <Link
-                                              to={subChild.link}
-                                              className='link'
-                                            >
+                                            <Link to={subChild.link} className="link">
                                               {subChild.label}
                                             </Link>
                                           </ListItem>
@@ -225,12 +234,12 @@ const Header = () => {
               >
                 <Button
                   sx={{
-                    color: hoveredMenu === menu.label ? 'red' : 'black',
+                    color: hoveredMenu === menu.label ? '#f44336' : 'black',
                     textTransform: 'none',
                     fontWeight: 'bold',
                     margin: '0 10px',
                     '&:hover': {
-                      color: 'red', // Hover color for button text
+                      color: '#f44336', // Hover color for button text
                       backgroundColor: 'transparent' // Ensure no background color is added
                     }
                   }}
@@ -260,7 +269,7 @@ const Header = () => {
                           overflow: 'auto',
                           '& .MuiMenuItem-root:hover': {
                             backgroundColor: '#f0f0f0', // Hover background color
-                            color: 'red' // Hover text color
+                            color: '#f44336' // Hover text color
                           },
                           '& a': {
                             textDecoration: 'none',
@@ -297,18 +306,18 @@ const Header = () => {
                       </Grid2>
 
                       <Grid2
-  item
-  xs={12} // Full width on extra-small screens
-  sm={8}  // 8 columns on small screens and up
-  md={8}  // Same as sm for medium screens
-  lg={8}  // Same as md for large screens
-  sx={{
-    // minWidth: getSelectedChild(menu)?.children ? { xs: '100%', sm: '100%', lg: '1000px' } : 'auto',
-    overflow: 'auto', // Ensure content adjusts to smaller screens
-  }}
->
-  <Grid2 container>{renderSelectedChildMenu(menu)}</Grid2>
-</Grid2>
+                        item
+                        xs={12} // Full width on extra-small screens
+                        sm={8} // 8 columns on small screens and up
+                        md={8} // Same as sm for medium screens
+                        lg={8} // Same as md for large screens
+                        sx={{
+                          // minWidth: getSelectedChild(menu)?.children ? { xs: '100%', sm: '100%', lg: '1000px' } : 'auto',
+                          overflow: 'auto' // Ensure content adjusts to smaller screens
+                        }}
+                      >
+                        <Grid2 container>{renderSelectedChildMenu(menu)}</Grid2>
+                      </Grid2>
                     </Grid2>
                   </Menu>
                 )}

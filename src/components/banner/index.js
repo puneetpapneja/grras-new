@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Dialog, DialogContent, DialogActions, Typography, Button, Box } from "@mui/material";
+import React, { useState } from 'react';
+import { Dialog, DialogContent, DialogActions, Typography, Button, Box } from '@mui/material';
 
 const BannerModal = () => {
   const [isBannerVisible, setBannerVisible] = useState(true); // Always visible on reload
@@ -17,11 +17,11 @@ const BannerModal = () => {
     >
       <DialogContent
         sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center",
-          padding: "24px",
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          textAlign: 'center',
+          padding: '24px'
         }}
       >
         <Typography id="banner-title" variant="h6" gutterBottom>
@@ -32,12 +32,12 @@ const BannerModal = () => {
         </Typography>
       </DialogContent>
       <DialogActions>
-        <Box sx={{ margin: "auto" }}>
+        <Box sx={{ margin: 'auto' }}>
           <Button
             variant="contained"
             color="primary"
             onClick={handleCloseBanner}
-            sx={{ textTransform: "none" }}
+            sx={{ textTransform: 'none' }}
           >
             Close
           </Button>

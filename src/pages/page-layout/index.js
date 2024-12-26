@@ -3,6 +3,7 @@ import Header from 'components/header';
 import PropTypes from 'prop-types';
 import { Outlet } from 'react-router';
 import { Grid2 } from '@mui/material';
+import Footer from 'components/footer';
 
 const PageLayout = ({ children }) => {
   useEffect(() => {}, []);
@@ -11,6 +12,7 @@ const PageLayout = ({ children }) => {
     <Grid2 className="full-height">
       <Header />
       {children ? children : <Outlet />}
+      <Footer/>
     </Grid2>
   );
 };

@@ -4,6 +4,7 @@ import { getRoutes } from './routes';
 import { useSelector } from 'react-redux';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Banner from 'components/banner';
+import TopButton from 'components/top-button';
 
 const App = () => {
   const userDtls = useSelector((state) => state?.user);
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <React.Fragment>
+        <TopButton />
         <Banner />
         <RouterProvider router={createBrowserRouter(getRoutes(userDtls?.hasSuperUser))} />
       </React.Fragment>
