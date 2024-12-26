@@ -73,5 +73,5 @@ export const MENUES = [
       { label: 'Winter Internship', link: SLUGS.WINTER_INTERNSHIP_TRANING }
     ]
   },
-  { label: 'About Grras', link: '#' }
+  { label: 'About Grras', link: '/about' }
 ];

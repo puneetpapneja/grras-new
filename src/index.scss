@@ -103,3 +103,12 @@ body {
 .selected-sub-child > a:hover {
   color: red;
 }
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: #f0f0f0;
+}
