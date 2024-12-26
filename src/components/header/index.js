@@ -203,12 +203,12 @@ const Header = () => {
               >
                 <Button
                   sx={{
-                    color: hoveredMenu === menu.label ? '#1976d2' : 'black',
+                    color: hoveredMenu === menu.label ? 'red' : 'black',
                     textTransform: 'none',
                     fontWeight: 'bold',
                     margin: '0 10px',
                     '&:hover': {
-                      color: '#1976d2 ', // Hover color for button text
+                      color: 'red ', // Hover color for button text
                       backgroundColor: 'transparent' // Ensure no background color is added
                     }
                   }}
@@ -232,7 +232,7 @@ const Header = () => {
                           overflow: 'auto',
                           '& .MuiMenuItem-root:hover': {
                             backgroundColor: '#f0f0f0', // Hover background color
-                            color: '#1976d2' // Hover text color
+                            color: 'red' // Hover text color
                           }
                         }
                       }
