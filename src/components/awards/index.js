@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Box, Card, CardContent, useTheme, useMediaQuery, CardMedia } from '@mui/material';
+import {
+  Typography,
+  Box,
+  Card,
+  CardContent,
+  useTheme,
+  useMediaQuery,
+  CardMedia
+} from '@mui/material';
 
 const awards = [
   { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
@@ -9,7 +17,7 @@ const awards = [
   { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
   { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
   { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
-  { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
+  { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' }
 ];
 
 const Awards = () => {
@@ -47,7 +55,7 @@ const Awards = () => {
         sx={{
           display: 'flex',
           flexWrap: 'wrap',
-          justifyContent: 'space-between', // Adjusted to ensure the cards are spaced correctly
+          justifyContent: 'space-between' // Adjusted to ensure the cards are spaced correctly
         }}
       >
         {displayedAwards.map((award, idx) => (
@@ -56,7 +64,7 @@ const Awards = () => {
             sx={{
               flex: '1 1 calc(25% - 16px)', // Ensures 4 cards in a row on larger screens
               marginBottom: '16px', // Ensures proper spacing for rows
-              boxSizing: 'border-box', // Prevents width issues by including padding and margin
+              boxSizing: 'border-box' // Prevents width issues by including padding and margin
             }}
           >
             <Card
@@ -70,8 +78,8 @@ const Awards = () => {
                 transition: 'transform 0.3s, box-shadow 0.3s',
                 '&:hover': {
                   transform: 'translateY(-8px)',
-                  boxShadow: 10,
-                },
+                  boxShadow: 10
+                }
               }}
             >
               <CardMedia
@@ -81,7 +89,7 @@ const Awards = () => {
                 sx={{
                   height: 140, // Fixed height to keep aspect ratio consistent
                   objectFit: 'cover', // Ensures the image fully occupies the space
-                  marginBottom: 2,
+                  marginBottom: 2
                 }}
               />
               <CardContent sx={{ padding: 1 }}>
@@ -91,7 +99,7 @@ const Awards = () => {
                     color: 'black',
                     whiteSpace: 'nowrap',
                     overflow: 'hidden',
-                    textOverflow: 'ellipsis', // Ensures the text does not wrap
+                    textOverflow: 'ellipsis' // Ensures the text does not wrap
                   }}
                 >
                   {award.title}
@@ -117,8 +125,8 @@ const Awards = () => {
               cursor: 'pointer',
               transition: 'background-color 0.3s',
               '&:hover': {
-                backgroundColor: '#f44336',
-              },
+                backgroundColor: '#f44336'
+              }
             }}
           />
         ))}

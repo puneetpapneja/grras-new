@@ -1,32 +1,46 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Box, Card, CardContent, Button, Grid, useTheme, useMediaQuery } from '@mui/material';
+import {
+  Typography,
+  Box,
+  Card,
+  CardContent,
+  Button,
+  Grid,
+  useTheme,
+  useMediaQuery
+} from '@mui/material';
 
 const testimonials = [
   {
     name: 'John Doe',
-    feedback: 'This platform is amazing! The instructors were knowledgeable, and the learning environment was perfect.',
-    role: 'Software Engineer',
+    feedback:
+      'This platform is amazing! The instructors were knowledgeable, and the learning environment was perfect.',
+    role: 'Software Engineer'
   },
   {
     name: 'Jane Smith',
-    feedback: 'I had a great experience! The content was engaging, and I gained valuable skills. The platform is very user-friendly, and I loved the community aspect.',
-    role: 'Project Manager',
+    feedback:
+      'I had a great experience! The content was engaging, and I gained valuable skills. The platform is very user-friendly, and I loved the community aspect.',
+    role: 'Project Manager'
   },
   {
     name: 'Michael Johnson',
-    feedback: 'Highly recommend this training center. It has helped me enhance my career opportunities. The environment is welcoming and very professional.',
-    role: 'Data Analyst',
+    feedback:
+      'Highly recommend this training center. It has helped me enhance my career opportunities. The environment is welcoming and very professional.',
+    role: 'Data Analyst'
   },
   {
     name: 'Alice Brown',
-    feedback: 'The best training platform I’ve used! The content was easy to follow, and I feel more confident in my career.',
-    role: 'UX Designer',
+    feedback:
+      'The best training platform I’ve used! The content was easy to follow, and I feel more confident in my career.',
+    role: 'UX Designer'
   },
   {
     name: 'David Lee',
-    feedback: 'Excellent content and support from instructors. I highly recommend this platform for anyone looking to upskill.',
-    role: 'Product Manager',
-  },
+    feedback:
+      'Excellent content and support from instructors. I highly recommend this platform for anyone looking to upskill.',
+    role: 'Product Manager'
+  }
 ];
 
 const Testimonials = () => {
@@ -87,7 +101,7 @@ const Testimonials = () => {
               key={idx}
               sx={{
                 display: 'flex',
-                justifyContent: 'center',
+                justifyContent: 'center'
               }}
             >
               <Card
@@ -102,8 +116,8 @@ const Testimonials = () => {
                   transition: 'transform 0.3s, box-shadow 0.3s',
                   '&:hover': {
                     transform: 'translateY(-8px)',
-                    boxShadow: 10,
-                  },
+                    boxShadow: 10
+                  }
                 }}
               >
                 <CardContent>
@@ -120,7 +134,7 @@ const Testimonials = () => {
                       sx={{
                         textTransform: 'none',
                         marginTop: 1,
-                        color: 'blue',
+                        color: 'blue'
                       }}
                     >
                       {isExpanded ? 'Show Less' : 'Show More'}
@@ -158,8 +172,8 @@ const Testimonials = () => {
               cursor: 'pointer',
               transition: 'background-color 0.3s',
               '&:hover': {
-                backgroundColor: '#f44336',
-              },
+                backgroundColor: '#f44336'
+              }
             }}
           />
         ))}

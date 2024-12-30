@@ -22,33 +22,33 @@ const ScrollToTopButton = styled(Button)(({ theme, showButton }) => ({
   '&:hover': {
     backgroundColor: '#333', // Darker black when hovered
     transform: 'scale(1.1)', // Slightly grow on hover
-    boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.3)', // Enhance shadow on hover
+    boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.3)' // Enhance shadow on hover
   },
   '&:active': {
     transform: 'scale(0.95)', // Shrink on click
-    boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.3)', // Reduce shadow on click
+    boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.3)' // Reduce shadow on click
   },
   '@keyframes bounce': {
     '0%, 20%, 50%, 80%, 100%': {
-      transform: 'translateY(0)',
+      transform: 'translateY(0)'
     },
     '40%': {
-      transform: 'translateY(-12px)', // Higher bounce
+      transform: 'translateY(-12px)' // Higher bounce
     },
     '60%': {
-      transform: 'translateY(-6px)',
-    },
+      transform: 'translateY(-6px)'
+    }
   },
   '@keyframes fadeIn': {
     '0%': {
       opacity: 0,
-      transform: 'translateY(40px)', // Start below screen
+      transform: 'translateY(40px)' // Start below screen
     },
     '100%': {
       opacity: 1,
-      transform: 'translateY(0)', // End in position
-    },
-  },
+      transform: 'translateY(0)' // End in position
+    }
+  }
 }));
 
 const ScrollToTop = () => {
@@ -77,10 +77,7 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <ScrollToTopButton
-      showButton={showButton}
-      onClick={handleScrollToTop}
-    >
+    <ScrollToTopButton showButton={showButton} onClick={handleScrollToTop}>
       ↑ {/* Up arrow icon */}
     </ScrollToTopButton>
   );

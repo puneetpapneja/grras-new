@@ -7,34 +7,32 @@ const cardData = [
   {
     icon: <EmojiObjects style={{ fontSize: 40, color: '#FF0000' }} />,
     title: 'Customized Training Solutions',
-    description: 'Tailored training programs designed to meet specific organizational needs.',
+    description: 'Tailored training programs designed to meet specific organizational needs.'
   },
   {
     icon: <AccessAlarm style={{ fontSize: 40, color: '#FF0000' }} />,
     title: 'Internship Training',
     description:
-      'Certified internship training offering practical experience, industry knowledge, and skill development.',
+      'Certified internship training offering practical experience, industry knowledge, and skill development.'
   },
   {
     icon: <Shield style={{ fontSize: 40, color: '#FF0000' }} />,
     title: 'Authorized Red Hat Partner',
-    description:
-      'Official Red Hat partner providing certified training and expertise.',
+    description: 'Official Red Hat partner providing certified training and expertise.'
   },
   {
     icon: <EmojiEvents style={{ fontSize: 40, color: '#FF0000' }} />,
     title: 'Industry-Recognized Certifications',
-    description:
-      'Prepare for certifications that enhance career opportunities and validate skills.',
-  },
+    description: 'Prepare for certifications that enhance career opportunities and validate skills.'
+  }
 ];
 
-const CardComponent = () => {
+const UniqueOffering = () => {
   const matches = useMediaQuery('(max-width:900px)'); // Responsive design
   const springProps = useSpring({
     from: { opacity: 0, transform: 'translateY(20px)' },
     to: { opacity: 1, transform: 'translateY(0px)' },
-    config: { tension: 150, friction: 20 },
+    config: { tension: 150, friction: 20 }
   });
 
   // Loading state
@@ -75,7 +73,7 @@ const CardComponent = () => {
                   width: 250, // Matches the card dimensions
                   height: 180,
                   textAlign: 'center',
-                  padding: '16px',
+                  padding: '16px'
                 }}
               >
                 <CardContent>
@@ -92,7 +90,10 @@ const CardComponent = () => {
               </Card>
             ))
           : cardData.map((card, index) => (
-              <animated.div key={index} style={{ ...springProps, willChange: 'transform, opacity' }}>
+              <animated.div
+                key={index}
+                style={{ ...springProps, willChange: 'transform, opacity' }}
+              >
                 <Card
                   style={{
                     width: 250, // Card dimensions
@@ -100,7 +101,7 @@ const CardComponent = () => {
                     textAlign: 'center',
                     padding: '16px',
                     boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
-                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                    transition: 'transform 0.3s ease, box-shadow 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = 'scale(1.05)';
@@ -128,4 +129,4 @@ const CardComponent = () => {
   );
 };
 
-export default CardComponent;
+export default UniqueOffering;
