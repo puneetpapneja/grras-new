@@ -6,6 +6,12 @@ import { COURSE_DETAILS } from 'utils/constants';
 import RequestInfo from 'components/request-info';
 import UniqueOffering from 'components/unique-offerings';
 import PropTypes from 'prop-types';
+import { sanitizeHTML } from 'utils';
+import CourseInfo from 'components/course-info';
+import KeyHighlights from 'components/course-keys';
+import LearningPath from 'components/learning-path';
+import Feedback from 'components/feedback';
+import FAQ from 'components/faqs';
 
 const StyledButton = styled(Button)(() => ({
   backgroundColor: 'black',
@@ -39,7 +45,9 @@ const CourseDetail = ({ slug }) => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const yOffset = -120; // Adjust this value for your sticky headers or padding
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
 
@@ -93,11 +101,12 @@ const CourseDetail = ({ slug }) => {
         }}
       >
         <StyledButton onClick={() => scrollToSection('overview')}>Overview</StyledButton>
-        <StyledButton onClick={() => scrollToSection('request-info')}>
-          Request More Info
-        </StyledButton>
+
         <StyledButton onClick={() => scrollToSection('course-info')}>
           Course Information
+        </StyledButton>
+        <StyledButton onClick={() => scrollToSection('request-info')}>
+          Request More Info
         </StyledButton>
         <StyledButton onClick={() => scrollToSection('download-content')}>
           <DownloadIcon sx={{ marginRight: '8px' }} /> Download Content
@@ -109,7 +118,10 @@ const CourseDetail = ({ slug }) => {
         <Typography variant="h5" sx={{ fontWeight: 'bold', marginBottom: '10px' }}>
           Overview
         </Typography>
-        <Typography>{courseDetail?.about}</Typography>
+        <Typography
+          dangerouslySetInnerHTML={{ __html: sanitizeHTML(courseDetail?.about) }}
+        ></Typography>
+        <KeyHighlights items={courseDetail?.highlights} key={`${courseDetail?.name}-highlights`} />
       </Box>
       {/* Tabs */}
       <Box id="course-info" sx={{ marginBottom: '40px' }}>
@@ -138,32 +150,25 @@ const CourseDetail = ({ slug }) => {
         {/* Tab Panels */}
         {selectedTab === 0 && (
           <Box sx={{ padding: { xs: '10px', md: '20px' }, color: 'black' }}>
-            <Typography variant="h6">Overview</Typography>
-            <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Typography>
+            <CourseInfo data={courseDetail?.info} />
           </Box>
         )}
         {selectedTab === 1 && (
           <Box sx={{ padding: { xs: '10px', md: '20px' }, color: 'black' }}>
-            <Typography variant="h6">Request Info</Typography>
-            <Typography>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-            </Typography>
+            <LearningPath
+              steps={courseDetail?.learningPath}
+              key={`${courseDetail?.name}-learning-path`}
+            />
           </Box>
         )}
         {selectedTab === 2 && (
           <Box sx={{ padding: { xs: '10px', md: '20px' }, color: 'black' }}>
-            <Typography variant="h6">Course Info</Typography>
-            <Typography>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-            </Typography>
+            <Feedback feedbacks={courseDetail?.feedbacks} key={`${courseDetail.name}-feedback`} />
           </Box>
         )}
         {selectedTab === 3 && (
           <Box sx={{ padding: { xs: '10px', md: '20px' }, color: 'black' }}>
-            <Typography variant="h6">Download</Typography>
-            <Typography>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
-            </Typography>
+            <FAQ faqs={courseDetail?.faqs} key={`${courseDetail?.name}-faqs`} />
           </Box>
         )}
       </Box>

@@ -88,22 +88,22 @@ export const REDHAT = [
     image: 'https://via.placeholder.com/300x140'
   },
   {
-    label: `/redhat/${COURSE_LABEL[SLUGS.RH358]}`,
-    link: SLUGS.RH358,
+    label: COURSE_LABEL[SLUGS.RH358],
+    link: `/redhat/${SLUGS.RH358}`,
     title: COURSE_LABEL[SLUGS.RH358],
     description: 'Learn the basics of React, including components, hooks, and more.',
     image: 'https://via.placeholder.com/300x140'
   },
   {
-    label: `/redhat/${COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT]}`,
-    link: SLUGS.REDHAT_OPENSHIFT,
+    label: COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT],
+    link: `/redhat/${SLUGS.REDHAT_OPENSHIFT}`,
     title: COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT],
     description: 'Learn the basics of React, including components, hooks, and more.',
     image: 'https://via.placeholder.com/300x140'
   },
   {
-    label: `/redhat/${COURSE_LABEL[SLUGS.OPENSHIFT_AI]}`,
-    link: SLUGS.OPENSHIFT_AI,
+    label: COURSE_LABEL[SLUGS.OPENSHIFT_AI],
+    link: `/redhat/${SLUGS.OPENSHIFT_AI}`,
     title: COURSE_LABEL[SLUGS.OPENSHIFT_AI],
     description: 'Learn the basics of React, including components, hooks, and more.',
     image: 'https://via.placeholder.com/300x140'
@@ -889,58 +889,144 @@ export const COURSE_DETAILS = {
   [SLUGS.RHCSA]: {
     name: COURSE_LABEL[SLUGS.RHCSA],
     banner: '/assets/img/1.jpg',
-    about:
-      'The RHCSA course is designed to provide a comprehensive understanding of Red Hat Enterprise Linux administration. It covers essential system administration tasks like configuring file systems, managing users, and securing Linux environments. This course prepares students for real-world scenarios and aligns with current industry demands, making it ideal for anyone aiming to become a certified system administrator',
+    about: `<strong>Red Hat Certified System Administrator (RHCSA)</strong> is a globally recognized certification that validates your expertise in Linux system administration. This certification is designed to build a strong foundation for managing Red Hat Enterprise Linux (RHEL) systems and is highly sought after by IT professionals and organizations worldwide. Whether you're aiming for a career in DevOps, cloud computing, or IT infrastructure management, RHCSA is your first step toward mastering Linux system administration.`,
     highlights: [
+      'Hands-on training with real-world scenario',
+      'Industry-recognized credentials for career advancement',
+      'Foundational skills for DevOps and Cloud Computing roles'
+    ],
+    info: [
       {
-        heading: '',
-        content: 'Hands-on labs with real-world scenarios'
+        heading: 'Duration:',
+        content: ['40–50 Hours (Classroom/Online)']
       },
       {
-        heading: '',
-        content: 'Instructor-led training with expert mentors'
+        heading: 'Mode:',
+        content: [
+          'Instructor-led training (Online/Offline)',
+          'Self-paced learning options available'
+        ]
       },
       {
-        heading: '',
-        content: 'Preparation for the RHCSA EX200 certification exam'
+        heading: 'Key Topics Covered:',
+        content: [
+          'Understanding and using essential tools (file management, text editing, and shell scripting)',
+          'Operating running systems (boot, reboot, shut down, and troubleshoot)',
+          'Configuring local storage using partitions, LVM, and file systems',
+          'Creating and configuring file systems (ext4, XFS)',
+          'Managing users and groups, file permissions, and SELinux security',
+          'Deploying and managing RHEL systems (installation and configuration)',
+          'Automating administrative tasks with cron jobs',
+          'Configuring basic networking and firewalls '
+        ]
       },
       {
-        heading: '',
-        content: 'Industry use cases to demonstrate the application of Linux skills'
-      },
-      {
-        heading: '',
-        content: 'Career support: Resume building and interview prep assistance'
+        heading: 'Who Should Enroll?',
+        content: [
+          'IT professionals looking to enhance their Linux skills',
+          'Fresh graduates aspiring to enter the IT field',
+          'Existing system administrators planning to validate their knowledge'
+        ]
       }
     ],
-    prerequisites: [
+    learningPath: [
       {
-        heading: '',
-        content:
-          'This course is ideal for IT professionals who are new to Linux and want to develop a solid foundation in system administration. '
+        title: 'Fundamentals',
+        description:
+          'Gain a basic understanding of Linux and its file system, commands, and architecture. This forms the foundation for the RHCSA course.',
+        clickable: true,
+        isStart: true
       },
       {
-        heading: '',
-        content:
-          'Basic knowledge of computer hardware and networking concepts is recommended but not mandatory.'
+        title: 'RHCSA Training',
+        description:
+          'Learn the core system administration tasks in detail, covering topics like user management, storage configuration, SELinux, and troubleshooting.',
+        clickable: true,
+        isStart: false
+      },
+      {
+        title: 'Practical Labs',
+        description:
+          'Engage in hands-on labs designed to simulate real-world scenarios. These labs help you build confidence and readiness for the RHCSA exam.',
+        clickable: false,
+        isStart: false
+      },
+      {
+        title: 'Certification Exam',
+        description:
+          'Attempt the <strong>EX200</strong> exam to earn the prestigious RHCSA certification. The exam focuses on practical tasks performed in a live environment.',
+        clickable: true,
+        isStart: false
+      },
+      {
+        title: 'Advanced Learning',
+        description:
+          'After RHCSA, expand your expertise with advanced certifications like RHCE (Red Hat Certified Engineer) and specialized RHEL courses.',
+        clickable: true,
+        isStart: true
       }
     ],
-    duration:
-      'Approximately 40 hours of intensive learning, spread over weekdays or weekends. Self-paced learning options are also available',
-    outlines: [
-      'Introduction to Red Hat Enterprise Linux',
-      'File System Management and Partitioning',
-      'User and Group Management',
-      'Networking Essentials and Configuration',
-      'Managing SELinux Security',
-      'Automating Tasks with Cron and Shell Scripting',
-      'Package Management Using RPM and YUM',
-      'Basic Troubleshooting and System Rescue',
-      'Preparing for RHCSA Certification Exam'
+    feedbacks: [
+      {
+        name: 'Arjun Sharma',
+        start: 4.5,
+        feedback:
+          'The RHCSA course at Grras Solutions helped me land my first Linux administrator job. The hands-on labs and experienced instructors made learning easy and fun!'
+      },
+      {
+        name: 'Sneha Gupta',
+        start: 5,
+        feedback:
+          'This is the best RHCSA training I’ve attended! The instructor explained concepts in such a practical way that even complex topics felt simple. Highly recommended!'
+      },
+      {
+        name: 'Vikram Singh',
+        start: 5,
+        feedback:
+          'The practical approach during the training ensured I was fully prepared for the RHCSA exam. I cleared it on my first attempt. Thanks, Grras!'
+      }
     ],
-    certification:
-      'Upon completion, students will be fully prepared to take the RHCSA EX200 certification exam, recognized globally as a critical step toward advancing in system administration roles. Career support includes assistance in job placement, resume optimization, and interview preparation',
-    exam: {},
+    faqs: [
+      {
+        question: 'What is RHCSA certification, and why is it important?',
+        answer:
+          'RHCSA is a globally recognized certification that validates your Linux administration skills. It is the first step toward building a career in IT infrastructure, cloud computing, and DevOps.'
+      },
+      {
+        question: 'Do I need any prerequisites to take the RHCSA course?',
+        answer:
+          'Basic knowledge of computers is sufficient. However, familiarity with command-line interfaces and operating systems can be an added advantage.'
+      },
+      {
+        question: 'What is the format of the RHCSA certification exam?',
+        answer:
+          'The RHCSA exam (EX200) is a performance-based test that requires candidates to complete real-world tasks on a live system within a specified time.'
+      },
+      {
+        question: 'Will I get hands-on practice during the training?',
+        answer:
+          'Absolutely! Our training includes intensive hands-on labs to ensure you are well-prepared for both real-world scenarios and the RHCSA exam.'
+      },
+      {
+        question: 'What career opportunities can I pursue after RHCSA certification?',
+        answer:
+          'With RHCSA certification, you can explore roles like Linux System Administrator, IT Administrator, DevOps Engineer, Cloud Support Engineer, and more.'
+      },
+      {
+        question: 'Can I take the course online?',
+        answer:
+          'Yes! We offer instructor-led online classes that provide the same interactive experience as classroom training.'
+      },
+      {
+        question: 'How long is the RHCSA certification valid?',
+        answer: 'The RHCSA certification is valid for three years from the date of issue.'
+      },
+      {
+        question: 'What is the cost of the certification exam?',
+        answer:
+          'The RHCSA exam fee depends on your region. Contact us for the latest fee details and discounts.'
+      }
+    ],
     pdf: 'assets/courses-pdfs/RHCSA.pdf'
   },
   [SLUGS.SUMMER_INTERNSHIP_TRANING]: {
