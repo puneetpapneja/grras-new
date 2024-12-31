@@ -8,7 +8,7 @@ import TopButton from 'components/top-button';
 const App = () => {
   const theme = createTheme({
     typography: {
-      fontFamily: 'Roboto, Arial, sans-serif Open Sans' // Replace with your desired font family
+      fontFamily: 'Helvetica,Arial,sans-serif' // Replace with your desired font family
     }
   });
 
