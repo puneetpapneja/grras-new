@@ -70,13 +70,15 @@ const CourseDetail = ({ slug }) => {
       <Box
         sx={{
           position: 'sticky',
-          top: 0,
-          zIndex: 1000,
+          top: 0, // Sticky at the very top of the screen
+          zIndex: 1010, // Ensure title stays above the buttons
           backgroundColor: 'white',
           padding: '10px 0',
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
           textAlign: 'center',
-          borderBottom: '1px solid #e0e0e0'
+          borderBottom: '1px solid #e0e0e0',
+          // Remove marginTop in mobile view
+          marginTop: 0 // Remove the top margin for mobile view to eliminate the gap
         }}
       >
         <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
@@ -84,13 +86,13 @@ const CourseDetail = ({ slug }) => {
         </Typography>
       </Box>
 
-      {/* Top Buttons */}
+      {/* Buttons Section */}
       <Box
         ref={buttonsRef} // Attach the ref to track the buttons' position
         sx={{
           position: 'sticky',
-          top: 40, // Buttons will stick below the title
-          zIndex: 1000,
+          top: { xs: '70px', sm: '40px' }, // Set a smaller top value to eliminate the gap on mobile view
+          zIndex: 1000, // Ensure buttons stay under the title
           backgroundColor: 'white',
           display: 'flex',
           flexWrap: 'wrap',
@@ -101,7 +103,6 @@ const CourseDetail = ({ slug }) => {
         }}
       >
         <StyledButton onClick={() => scrollToSection('overview')}>Overview</StyledButton>
-
         <StyledButton onClick={() => scrollToSection('course-info')}>
           Course Information
         </StyledButton>
@@ -114,16 +115,20 @@ const CourseDetail = ({ slug }) => {
       </Box>
 
       {/* Course Sections */}
-      <Box id="overview" sx={{ marginBottom: '40px' }}>
+      <Box id="overview" sx={{ marginBottom: '40px', marginTop: { xs: '120px', sm: '40px' } }}>
         <Typography variant="h5" sx={{ fontWeight: 'bold', marginBottom: '10px' }}>
           Overview
         </Typography>
-        <Typography
-          dangerouslySetInnerHTML={{ __html: sanitizeHTML(courseDetail?.about) }}
-        ></Typography>
-        <KeyHighlights items={courseDetail?.highlights} key={`${courseDetail?.name}-highlights`} />
+        <Typography dangerouslySetInnerHTML={{ __html: sanitizeHTML(courseDetail?.about) }} />
+        {courseDetail?.highlights?.length ? (
+          <KeyHighlights
+            items={courseDetail?.highlights}
+            key={`${courseDetail?.name}-highlights`}
+          />
+        ) : null}
       </Box>
-      {/* Tabs */}
+
+      {/* Tabs Section */}
       <Box id="course-info" sx={{ marginBottom: '40px' }}>
         <Tabs
           value={selectedTab}
@@ -172,6 +177,8 @@ const CourseDetail = ({ slug }) => {
           </Box>
         )}
       </Box>
+
+      {/* Additional Sections */}
       <UniqueOffering />
       <Box id="request-info" sx={{ marginBottom: '10px' }}>
         <RequestInfo />

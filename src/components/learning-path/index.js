@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import { sanitizeHTML } from 'utils';
+import { useNavigate } from 'react-router-dom';
 
 // Styled component for the step boxes
 const StepBox = styled(Box)(({ theme, clickable }) => ({
@@ -48,9 +49,11 @@ const ConnectorLine = styled(Box)(({ side }) => ({
 }));
 
 const LearningPath = ({ steps }) => {
+  const navigate = useNavigate();
   const handleStepClick = (step) => {
-    if (step.clickable) {
-      alert(`You clicked on: ${step.title}`);
+    if (step.clickable && step?.link) {
+      navigate(step?.link);
+      return;
     }
   };
 
@@ -85,6 +88,7 @@ const LearningPath = ({ steps }) => {
               <Typography
                 variant="body2"
                 mt={1}
+                sx={{ color: step.clickable && step.link ? '#f44336' : 'black' }}
                 dangerouslySetInnerHTML={{ __html: sanitizeHTML(step.description) }}
               ></Typography>
             )}

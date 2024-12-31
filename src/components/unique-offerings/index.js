@@ -54,7 +54,7 @@ const UniqueOffering = () => {
         gutterBottom
         style={{ fontWeight: 'bold', marginBottom: 16 }}
       >
-        Grrass Unique Offerings
+        Grras Unique Offerings
       </Typography>
 
       {/* Cards or Skeleton Loaders */}
