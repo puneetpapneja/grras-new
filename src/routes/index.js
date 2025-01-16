@@ -5,6 +5,8 @@ import { COURSE_LABEL, REDHAT } from 'utils/constants';
 
 const HomePage = React.lazy(() => import('pages/home'));
 const RedHatPage = React.lazy(() => import('pages/redhat'));
+const AwsPage = React.lazy(() => import('pages/aws'));
+const CoursePage = React.lazy(() => import('pages/course'));
 const CoursesPage = React.lazy(() => import('pages/courses'));
 
 export const routes = [
@@ -29,7 +31,12 @@ export const routes = [
   },
   {
     path: '/aws/:slug',
-    element: <RedHatPage />,
+    element: <AwsPage />,
+    label: ({ slug }) => COURSE_LABEL[slug]
+  },
+  {
+    path: '/course/:slug',
+    element: <CoursePage />,
     label: ({ slug }) => COURSE_LABEL[slug]
   }
 ];

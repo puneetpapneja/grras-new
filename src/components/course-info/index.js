@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, List, ListItem } from '@mui/material';
 import PropTypes from 'prop-types';
+import { sanitizeHTML } from 'utils';
 
 const CourseInfo = ({ data }) => {
   return (
@@ -36,8 +37,8 @@ const CourseInfo = ({ data }) => {
                     fontSize: { xs: '14px', md: '16px' },
                     lineHeight: 1.2 // Reduced line height
                   }}
+                  dangerouslySetInnerHTML={{ __html: sanitizeHTML(contentItem) }}
                 >
-                  {contentItem}
                 </Typography>
               </ListItem>
             ))}

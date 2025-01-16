@@ -127,7 +127,7 @@ const Header = () => {
           {/* Logo */}
           <Typography variant="h6" sx={{ color: 'black', display: 'flex', alignItems: 'center' }}>
             <img
-              src="assets/images/logo.jpg"
+              src="/assets/images/logo.jpg"
               alt="Logo"
               style={{ height: 50, objectFit: 'contain', marginRight: '16px' }}
             />
