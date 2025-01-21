@@ -38,8 +38,7 @@ const CourseInfo = ({ data }) => {
                     lineHeight: 1.2 // Reduced line height
                   }}
                   dangerouslySetInnerHTML={{ __html: sanitizeHTML(contentItem) }}
-                >
-                </Typography>
+                ></Typography>
               </ListItem>
             ))}
           </List>

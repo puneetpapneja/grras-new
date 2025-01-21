@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 
 const imageMarks = [
-  { value: 0, src: 'https://bca.grras.com/uploads/banner/36650a0e3f9924157d728a58ee1565e8.jpg' },
-  { value: 25, src: 'https://bca.grras.com/uploads/banner/cb508acf5ae7935550c39f38bb3b510b.jpg' }
+  { value: 0, src: '/assets/images/slider-1.png', text: 'Empowering Minds, Shaping Futures.' },
+  { value: 25, src: '/assets/images/slider-2.png', text: 'Learn Today, Lead Tomorrow.' }
 ];
 
 const Slider = () => {
@@ -22,7 +22,7 @@ const Slider = () => {
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
 
-  const currentImage = imageMarks.find((mark) => mark.value === value)?.src;
+  const currentImageData = imageMarks.find((mark) => mark.value === value);
 
   return (
     <Box
@@ -41,25 +41,48 @@ const Slider = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          position: 'relative',
           marginBottom: 3,
           borderRadius: '10px',
           overflow: 'hidden',
-          height: '400px',
+          height: { xs: '300px', sm: '350px', md: '400px' },
           width: '100%',
           background: '#f5f5f5'
         }}
       >
-        {currentImage ? (
-          <img
-            src={currentImage}
-            alt="Selected"
-            style={{
-              height: '100%',
-              width: '100%',
-              objectFit: 'cover',
-              transition: 'opacity 1s ease-in-out'
-            }}
-          />
+        {currentImageData ? (
+          <>
+            <img
+              src={currentImageData.src}
+              alt="Selected"
+              style={{
+                height: '100%',
+                width: '100%',
+                objectFit: 'cover',
+                transition: 'opacity 1s ease-in-out'
+              }}
+            />
+            <Box
+              sx={{
+                position: 'absolute',
+                top: '50%',
+                left: { xs: '5%', sm: '10%' },
+                transform: 'translateY(-50%)',
+                color: 'white',
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                padding: { xs: '5px 10px', sm: '10px 20px' },
+                borderRadius: '10px'
+              }}
+            >
+              <Typography
+                variant="h5"
+                component="div"
+                sx={{ fontSize: { xs: '1rem', sm: '1.25rem', md: '1.5rem' } }}
+              >
+                {currentImageData.text}
+              </Typography>
+            </Box>
+          </>
         ) : (
           <Typography variant="body1" color="textSecondary">
             Loading...

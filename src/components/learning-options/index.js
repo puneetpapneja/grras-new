@@ -5,25 +5,25 @@ const data = [
   {
     title: 'Classroom Training',
     description: 'Traditional, instructor-led learning offered in popular global destinations.',
-    image: 'assets/images/classroom.jpg'
+    image: 'assets/images/opt-1.png'
   },
   {
     title: 'Fly-Me-A-Trainer (FMAT)',
     description:
       'Flexible on-site learning for larger groups. Fly an expert instructor directly to your location, anywhere in the world.',
-    image: 'assets/images/classroom.jpg'
+    image: 'assets/images/opt-2.png'
   },
   {
     title: 'Live Online Classes',
     description:
       'Flexible virtual learning with expert instructors from the comfort of your own space.',
-    image: 'assets/images/classroom.jpg'
+    image: 'assets/images/opt-3.png'
   },
   {
     title: 'Flexi',
     description:
       'Self-paced learning with edited lectures, courseware, hands-on labs, and optional instructor-led doubt clearing sessions.',
-    image: 'assets/images/classroom.jpg'
+    image: 'assets/images/opt-4.png'
   }
 ];
 

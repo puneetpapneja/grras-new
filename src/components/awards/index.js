@@ -11,13 +11,13 @@ import {
 
 const awards = [
   { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
-  { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
-  { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
-  { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
-  { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
-  { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
-  { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' },
-  { image: 'https://picsum.photos/1200/1200', title: 'Great Place to Work Certified' }
+  { image: 'https://picsum.photos/1200/1200', title: 'Top Employer 2023' },
+  { image: 'https://picsum.photos/1200/1200', title: 'Innovative Company of the Year' },
+  { image: 'https://picsum.photos/1200/1200', title: 'Best Workplace Culture Award' },
+  { image: 'https://picsum.photos/1200/1200', title: 'Excellence in Service Award' },
+  { image: 'https://picsum.photos/1200/1200', title: 'Leader in Industry Standards' },
+  { image: 'https://picsum.photos/1200/1200', title: 'Customer Satisfaction Excellence' },
+  { image: 'https://picsum.photos/1200/1200', title: 'Employee Choice Award' }
 ];
 
 const Awards = () => {
@@ -25,7 +25,7 @@ const Awards = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const awardsPerPage = isMobile ? 2 : 4; // Show 2 awards on mobile, 4 on larger screens
+  const awardsPerPage = isMobile ? 1 : 4; // Show 1 award on mobile, 4 on larger screens
   const totalGroups = Math.ceil(awards.length / awardsPerPage);
 
   const displayedAwards = awards.slice(
@@ -54,25 +54,27 @@ const Awards = () => {
       <Box
         sx={{
           display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'space-between' // Adjusted to ensure the cards are spaced correctly
+          flexWrap: 'nowrap',
+          justifyContent: 'center',
+          overflow: 'hidden'
         }}
       >
         {displayedAwards.map((award, idx) => (
           <Box
             key={idx}
             sx={{
-              flex: '1 1 calc(25% - 16px)', // Ensures 4 cards in a row on larger screens
-              marginBottom: '16px', // Ensures proper spacing for rows
-              boxSizing: 'border-box' // Prevents width issues by including padding and margin
+              flex: '1 1 100%', // Ensures one card occupies the full width in mobile view
+              display: 'flex',
+              justifyContent: 'center',
+              marginBottom: '16px'
             }}
           >
             <Card
               sx={{
                 boxShadow: 6,
                 textAlign: 'center',
-                width: '100%', // Ensures the card occupies full width in its grid
-                maxWidth: 250, // Limit card width on larger screens
+                width: '100%',
+                maxWidth: isMobile ? '90%' : 250, // Adjust width based on screen size
                 borderRadius: 3,
                 padding: 2,
                 transition: 'transform 0.3s, box-shadow 0.3s',
@@ -87,8 +89,8 @@ const Awards = () => {
                 image={award.image}
                 alt={award.title}
                 sx={{
-                  height: 140, // Fixed height to keep aspect ratio consistent
-                  objectFit: 'cover', // Ensures the image fully occupies the space
+                  height: 140,
+                  objectFit: 'cover',
                   marginBottom: 2
                 }}
               />
@@ -99,7 +101,7 @@ const Awards = () => {
                     color: 'black',
                     whiteSpace: 'nowrap',
                     overflow: 'hidden',
-                    textOverflow: 'ellipsis' // Ensures the text does not wrap
+                    textOverflow: 'ellipsis'
                   }}
                 >
                   {award.title}

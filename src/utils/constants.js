@@ -179,7 +179,7 @@ export const COURSE_DETAILS = {
   [SLUGS.AWS_Solutions_Architect_Associate]: {
     name: 'AWS Solutions Architect',
     banner: '/assets/img/11.jpg',
-    about:`The <strong>AWS Solutions Architect</strong> training program is designed to
+    about: `The <strong>AWS Solutions Architect</strong> training program is designed to
 equip professionals with the knowledge and skills needed to
 design, deploy, and manage scalable, highly available, and
 fault-tolerant systems on the Amazon Web Services (AWS)
@@ -189,12 +189,12 @@ participants are well-prepared to meet the demands of cloudbased solutions. Whet
 system administrator, or developer, this program provides a
 solid foundation for mastering AWS architecture`,
     highlights: [
-     `Hands-on training with real-world use cases and
+      `Hands-on training with real-world use cases and
 scenarios.`,
-`Learn to design and deploy secure, robust, and costeffective AWS solutions.`,
-`Industry-recognized curriculum aligned with AWS best
+      `Learn to design and deploy secure, robust, and costeffective AWS solutions.`,
+      `Industry-recognized curriculum aligned with AWS best
 practices.`,
-`Comprehensive preparation for AWS Solutions Architect
+      `Comprehensive preparation for AWS Solutions Architect
 certifications.`
     ],
     info: [
@@ -207,7 +207,7 @@ certifications.`
         content: [
           `<strong>Instructor-led Training:</strong> Available both online and
 offline.`,
-`<strong>Self-paced Learning:</strong> Flexible options for working
+          `<strong>Self-paced Learning:</strong> Flexible options for working
 professionals.`
         ]
       },
@@ -216,40 +216,39 @@ professionals.`
         content: [
           `<strong>AWS Fundamentals:</strong> Overview of cloud computing,
 AWS architecture, and core services.`,
-`<strong>Designing Resilient Architectures:</strong> High availability,
+          `<strong>Designing Resilient Architectures:</strong> High availability,
 fault tolerance, and disaster recovery solutions.`,
-`<strong>AWS Compute Services:</strong> EC2 instances, Auto Scaling,
+          `<strong>AWS Compute Services:</strong> EC2 instances, Auto Scaling,
 and Elastic Load Balancing.`,
-`<strong>Networking and Content Delivery:</strong> VPC, subnets,
+          `<strong>Networking and Content Delivery:</strong> VPC, subnets,
 Route 53, and CloudFront configurations.`,
-`<strong>Data Storage Solutions:</strong> S3, EBS, EFS, and Glacier
+          `<strong>Data Storage Solutions:</strong> S3, EBS, EFS, and Glacier
 storage options with use cases.`,
-`<strong>Database Services:</strong> RDS, DynamoDB, and Redshift for
+          `<strong>Database Services:</strong> RDS, DynamoDB, and Redshift for
 database management`,
-`<strong>Identity and Access Management (IAM):</strong> Configuring
+          `<strong>Identity and Access Management (IAM):</strong> Configuring
 users, roles, and policies securely.`,
-`<strong>Monitoring and Logging:</strong> CloudWatch, CloudTrail, and
+          `<strong>Monitoring and Logging:</strong> CloudWatch, CloudTrail, and
 AWS Cong for operational insights.`,
-`<strong>Cost Optimization:</strong> Strategies to manage AWS costs
+          `<strong>Cost Optimization:</strong> Strategies to manage AWS costs
 effectively`,
-`<strong>Security and Compliance:</strong> Implementing best practices
+          `<strong>Security and Compliance:</strong> Implementing best practices
 for secure cloud solutions.`,
-`<strong>AWS Lambda and Serverless Architectures:</strong>
+          `<strong>AWS Lambda and Serverless Architectures:</strong>
 Introduction to building and managing serverless
 applications.`
-
         ]
       },
       {
         heading: 'Who Should Enroll?',
         content: [
-         `<strong>Cloud Architects:</strong> Designing scalable and secure cloud
+          `<strong>Cloud Architects:</strong> Designing scalable and secure cloud
 infrastructures.`,
-`<strong>System Administrators:</strong> Migrating and managing
+          `<strong>System Administrators:</strong> Migrating and managing
 workloads on AWS.`,
-`<strong>Developers:</strong> Building and deploying cloud-native
+          `<strong>Developers:</strong> Building and deploying cloud-native
 applications.`,
-`<strong>IT Professionals:</strong> Looking to transition into cloud
+          `<strong>IT Professionals:</strong> Looking to transition into cloud
 computing roles`
         ]
       }
@@ -264,7 +263,7 @@ computing concepts.`,
       },
       {
         title: 'Step 2',
-        description:`Enroll in the AWS Solutions Architect training
+        description: `Enroll in the AWS Solutions Architect training
 program.`,
         clickable: true,
         isStart: false
@@ -295,7 +294,7 @@ certication exam with mock tests and practice sessions.`,
       {
         name: 'Priya Jain',
         start: 4.5,
-        feedback:`This training gave me the condence to design and deploy
+        feedback: `This training gave me the condence to design and deploy
 cloud solutions effectively. The practical labs were incredibly
 helpful!`
       },
@@ -308,7 +307,7 @@ Solutions Architect certication. Highly recommended!`
       {
         name: 'Sneha Sharma',
         start: 5,
-        feedback:`I learned how to optimize costs and improve system
+        feedback: `I learned how to optimize costs and improve system
 performance on AWS. This course is perfect for anyone in
 IT!`
       }
@@ -339,7 +338,7 @@ Architect Associate and Professional certifications.`
         answer: `Yes, roles such as AWS Solutions Architect, Cloud
 Engineer, and Cloud Consultant are some of the career paths
 available`
-      },
+      }
     ],
     pdf: 'assets/courses-pdfs/RHCSA.pdf'
   },
@@ -489,7 +488,7 @@ available`
   [SLUGS.CKA]: {
     name: 'Certified Kubernetes Administrator (CKA) course',
     banner: '/assets/img/9.jpg',
-    about:`The <strong>Certied Kubernetes Administrator (CKA)</strong> training
+    about: `The <strong>Certied Kubernetes Administrator (CKA)</strong> training
 program is designed to help IT professionals master
 Kubernetes cluster management. This comprehensive course
 provides the skills required to deploy, maintain, and
@@ -517,7 +516,7 @@ topics.`,
         content: [
           `<strong>Instructor-led Training:</strong> Available both online and
 offline.`,
-`<strong>Self-paced Learning:</strong> Flexible options for busy
+          `<strong>Self-paced Learning:</strong> Flexible options for busy
 professionals.`
         ]
       },
@@ -526,25 +525,25 @@ professionals.`
         content: [
           `<strong>Kubernetes Fundamentals:</strong> Understanding Kubernetes
 architecture, components, and cluster communication.`,
-`<strong>Cluster Setup and Conguration:</strong> Installing
+          `<strong>Cluster Setup and Conguration:</strong> Installing
 Kubernetes clusters using kubeadm and conguring
 highly available clusters.
 `,
-`<strong>Workload Management:</strong> Deploying, scaling, and
+          `<strong>Workload Management:</strong> Deploying, scaling, and
 managing Kubernetes workloads using Deployments,
 StatefulSets, and DaemonSets.`,
-`<strong>Networking in Kubernetes:</strong> Conguring services,
+          `<strong>Networking in Kubernetes:</strong> Conguring services,
 managing Ingress, and setting up Kubernetes network
 policies.`,
-`<strong>Persistent Storage:</strong> Understanding Persistent Volumes,
+          `<strong>Persistent Storage:</strong> Understanding Persistent Volumes,
 Persistent Volume Claims, and storage classes.`,
-`<strong>Security and Access Control:</strong> Implementing RBAC,
+          `<strong>Security and Access Control:</strong> Implementing RBAC,
 Secrets, CongMaps, and securing the cluster with best
 practices`,
-`<strong>Monitoring and Logging:</strong> Conguring tools like
+          `<strong>Monitoring and Logging:</strong> Conguring tools like
 Prometheus and Grafana for cluster monitoring and
 logging`,
-`<strong>Troubleshooting Kubernetes Clusters:</strong> Diagnosing and
+          `<strong>Troubleshooting Kubernetes Clusters:</strong> Diagnosing and
 resolving cluster issues, including application failures
 and network problems`
         ]
@@ -554,43 +553,40 @@ and network problems`
         content: [
           `<strong>System Administrators:</strong> Looking to expand their
 skillset to include Kubernetes management.`,
-`DevOps Engineers: Integrating Kubernetes into CI/CD
+          `DevOps Engineers: Integrating Kubernetes into CI/CD
 pipelines and workflows.`,
-`Cloud Administrators: Managing containerized
+          `Cloud Administrators: Managing containerized
 workloads in cloud environments.`,
-`IT Professionals: Seeking to enhance their career prospects in containerization and orchestration.`
+          `IT Professionals: Seeking to enhance their career prospects in containerization and orchestration.`
         ]
       }
     ],
     learningPath: [
       {
         title: 'Step 1',
-        description:
-          'Gain foundational knowledge of containerization and Docker (if required).',
+        description: 'Gain foundational knowledge of containerization and Docker (if required).',
         clickable: true,
         isStart: true
       },
       {
         title: 'Step 2',
-        description:
-          'Enroll in the Certied Kubernetes Administrator (CKA) training program.',
+        description: 'Enroll in the Certied Kubernetes Administrator (CKA) training program.',
         clickable: true,
         isStart: false
       },
       {
         title: 'Step 3',
-        description:
-          'Participate in hands-on labs and practical exercises to build skills.',
+        description: 'Participate in hands-on labs and practical exercises to build skills.',
         clickable: false,
         isStart: false
       },
       {
         title: 'Step 4',
-        description:`Master advanced topics like troubleshooting,
+        description: `Master advanced topics like troubleshooting,
 monitoring, and security`,
         clickable: true,
         isStart: false
-      },
+      }
     ],
     feedbacks: [
       {
@@ -625,12 +621,12 @@ containerization is recommended`
       },
       {
         question: 'What resources are provided during the training?',
-        answer:`Participants receive course materials, hands-on labs, and
+        answer: `Participants receive course materials, hands-on labs, and
 access to practice environments.`
       },
       {
         question: 'Does this training include preparation for the CKA certication?',
-        answer:`Yes, the training is aligned with the CKA certication
+        answer: `Yes, the training is aligned with the CKA certication
 objectives and includes practice exercises based on the exam
 syllabus.`
       },
@@ -789,8 +785,7 @@ syllabus.`
   [SLUGS.DO188]: {
     name: COURSE_LABEL[SLUGS.DO188],
     banner: '/assets/img/3.jpg',
-    about:
-      `The <strong>DO188</strong> certication course is designed to provide
+    about: `The <strong>DO188</strong> certication course is designed to provide
 developers with a foundational understanding of container
 technology and its application in building, deploying, and
 managing containerized applications using Podman. As an
@@ -803,8 +798,7 @@ development and container orchestration.`,
       `Hands-on training with Podman for building and
 managing containers`,
       `Preparing developers to use Red Hat OpenShift for
-application orchestration`,
-
+application orchestration`
     ],
     info: [
       {
@@ -833,7 +827,7 @@ applications`,
           `Deploying containerized applications to Red Hat
 OpenShift`,
           `Orchestrating multi-container applications using
-Kubernetes/OpenShift`,
+Kubernetes/OpenShift`
         ]
       },
       {
@@ -844,7 +838,7 @@ development workflows`,
           `IT professionals seeking to understand container
 technology and OpenShift basics`,
           `Students and professionals aiming to build a career in
-cloud-native application development`,
+cloud-native application development`
         ]
       }
     ],
@@ -920,7 +914,7 @@ certication exam to validate your skills.`
         answer: `Absolutely! DO188 serves as the foundational course for
 advanced OpenShift certications like DO280
 (Administration) and DO288 (Development).`
-      },
+      }
     ],
     pdf: 'assets/courses-pdfs/RHCSA.pdf'
   },
@@ -941,7 +935,7 @@ OpenShift clusters`,
       `Manage authentication, networking, and application
 security`,
       `Gain practical skills for troubleshooting and monitoring
-OpenShift environments`,
+OpenShift environments`
     ],
     info: [
       {
@@ -967,7 +961,7 @@ access to recorded lectures and resources.`
           `Securing OpenShift applications and environments`,
           `Monitoring and troubleshooting OpenShift clusters`,
           `Upgrading and maintaining OpenShift clusters`,
-          `Application deployment and scaling`,
+          `Application deployment and scaling`
         ]
       },
       {
@@ -978,7 +972,7 @@ applications and Kubernetes clusters`,
           `IT professionals seeking advanced knowledge of
 OpenShift for production use`,
           `DevOps engineers aiming to enhance their deployment
-and orchestration skills`,
+and orchestration skills`
         ]
       }
     ],
@@ -1049,14 +1043,14 @@ simulating real-world scenarios for OpenShift administration`
         question: 'Is there a certication exam after the course?',
         answer: `Yes, the EX280 exam is the associated certication for
 DO280, validating your OpenShift administration skills.`
-      },
+      }
     ],
     pdf: 'assets/courses-pdfs/RHCSA.pdf'
   },
   [SLUGS.DO380]: {
     name: COURSE_LABEL[SLUGS.DO380],
     banner: '/assets/img/5.jpg',
-    about:`The <strong>DO380</strong> course is an advanced certication designed for
+    about: `The <strong>DO380</strong> course is an advanced certication designed for
 IT professionals who manage large-scale OpenShift clusters
 in enterprise environments. This course equips you with the
 skills to scale and manage OpenShift deployments, implement
@@ -1068,7 +1062,7 @@ and IT infrastructure roles.`,
       `Master advanced OpenShift administration techniques`,
       `Learn to scale OpenShift clusters and manage complex
 deployments`,
-`Gain practical knowledge of GitOps workows,
+      `Gain practical knowledge of GitOps workows,
 enterprise logging, and monitoring`
     ],
     info: [
@@ -1081,7 +1075,7 @@ enterprise logging, and monitoring`
         content: [
           `<strong>Instructor-led Training:</strong> Available both online and
 ofine with live, interactive sessions.`,
-`Self-paced Learning: Flexible modules with recorded
+          `Self-paced Learning: Flexible modules with recorded
 lectures and comprehensive study materials.`
         ]
       },
@@ -1094,7 +1088,7 @@ lectures and comprehensive study materials.`
           'Logging and monitoring OpenShift clusters at scale',
           'Automating infrastructure management tasks',
           'Disaster recovery and backup strategies',
-          'Advanced security configurations',
+          'Advanced security configurations'
         ]
       },
       {
@@ -1102,14 +1096,15 @@ lectures and comprehensive study materials.`
         content: [
           'OpenShift administrators managing large-scale clusters',
           'IT professionals working in enterprise DevOps or cloud environments',
-          'Experienced system administrators seeking to specialize in OpenShift',
+          'Experienced system administrators seeking to specialize in OpenShift'
         ]
       }
     ],
     learningPath: [
       {
         title: 'Step 1',
-        description: 'Complete foundational OpenShift courses like DO280 (Production Cluster Administration).',
+        description:
+          'Complete foundational OpenShift courses like DO280 (Production Cluster Administration).',
         clickable: true,
         link: `/redhat/${SLUGS.DO280}`,
         isStart: true
@@ -1181,7 +1176,7 @@ logging and monitoring.`
   [SLUGS.DOCKER_CONTAINER_TRANING]: {
     name: 'Docker Container and Podman',
     banner: '/assets/img/10.jpg',
-    about:`<strong>Docker</strong> is the leading platform for containerizing applications,
+    about: `<strong>Docker</strong> is the leading platform for containerizing applications,
 enabling developers and system administrators to build, ship,
 and run applications efciently. This comprehensive Docker
 training program equips you with the foundational and
@@ -1194,11 +1189,11 @@ containerization and modern application delivery.`,
     highlights: [
       `Comprehensive, hands-on training with real-world
 scenarios.`,
-`Learn to build, deploy, and manage containerized
+      `Learn to build, deploy, and manage containerized
 applications.`,
-`Industry-relevant curriculum designed for career
+      `Industry-relevant curriculum designed for career
 advancement.`,
-`Coverage of advanced Docker features and best
+      `Coverage of advanced Docker features and best
 practices.`
     ],
     info: [
@@ -1211,7 +1206,7 @@ practices.`
         content: [
           `<strong>Instructor-led Training:</strong> Available both online and
 offline.`,
-`Self-paced Learning: Flexible options for professionals`
+          `Self-paced Learning: Flexible options for professionals`
         ]
       },
       {
@@ -1219,26 +1214,26 @@ offline.`,
         content: [
           `<strong>Introduction to Docker:</strong> Overview of containers,
 images, and the Docker architecture`,
-`<strong>Installing Docker:</strong> Step-by-step guide to installing
+          `<strong>Installing Docker:</strong> Step-by-step guide to installing
 Docker on Linux and Windows.`,
-`<strong>Working with Docker Images:</strong> Building, managing, and
+          `<strong>Working with Docker Images:</strong> Building, managing, and
 optimizing Docker images using Dockerfiles.`,
-`<strong>Container Management:</strong> Running, stopping, and
+          `<strong>Container Management:</strong> Running, stopping, and
 managing containers effectively.`,
-`<strong>Docker Networking:</strong> Conguring container
+          `<strong>Docker Networking:</strong> Conguring container
 communication with networks and custom bridge
 networks.`,
-`<strong>Docker Volumes:</strong> Managing persistent storage for
+          `<strong>Docker Volumes:</strong> Managing persistent storage for
 containers with volumes and bind mounts.`,
-`<strong>Docker Compose:</strong> Orchestrating multi-container
+          `<strong>Docker Compose:</strong> Orchestrating multi-container
 applications using Docker Compose.`,
-`<strong>Advanced Docker Concepts:</strong> Multi-stage builds, image
+          `<strong>Advanced Docker Concepts:</strong> Multi-stage builds, image
 optimization, and managing private Docker registries.`,
-`<strong>Docker Security:</strong> Implementing best practices to secure
+          `<strong>Docker Security:</strong> Implementing best practices to secure
 Docker containers and images.`,
-`<strong>Monitoring and Logging:</strong> Setting up Docker monitoring
+          `<strong>Monitoring and Logging:</strong> Setting up Docker monitoring
 and logging with tools like Prometheus and ELK stack.`,
-`<strong>Docker Swarm:</strong> Introduction to Docker Swarm for
+          `<strong>Docker Swarm:</strong> Introduction to Docker Swarm for
 container orchestration.`
         ]
       },
@@ -1247,11 +1242,11 @@ container orchestration.`
         content: [
           `<strong>Developers:</strong> Looking to streamline application
 deployment and testing.`,
-`<strong>System Administrators:</strong> Managing containerized
+          `<strong>System Administrators:</strong> Managing containerized
 applications in production.`,
-`<strong>DevOps Engineers:</strong> Automating and optimizing
+          `<strong>DevOps Engineers:</strong> Automating and optimizing
 workows with Docker.`,
-`<strong>IT Professionals:</strong> Seeking a career in containerization
+          `<strong>IT Professionals:</strong> Seeking a career in containerization
 and modern IT infrastructures.`
         ]
       }
@@ -1259,21 +1254,21 @@ and modern IT infrastructures.`
     learningPath: [
       {
         title: 'Step 1',
-        description:`Introduction to Docker and understanding
-containerization concepts.`,          
+        description: `Introduction to Docker and understanding
+containerization concepts.`,
         clickable: true,
         isStart: true
       },
       {
         title: 'Step 2',
-        description:`Hands-on practice with Docker commands,
+        description: `Hands-on practice with Docker commands,
 images, and containers`,
         clickable: true,
         isStart: false
       },
       {
         title: 'Step 3',
-        description:`Master Docker Compose and advanced Docker
+        description: `Master Docker Compose and advanced Docker
 features.`,
         clickable: false,
         isStart: false
@@ -1296,21 +1291,19 @@ practices.`,
       {
         name: 'Arjun Sharma',
         start: 4.5,
-        feedback:
-          `This Docker training was a game-changer for me. I now feel
+        feedback: `This Docker training was a game-changer for me. I now feel
 condent managing containers in production environments!"`
       },
       {
         name: 'Sneha Gupta',
         start: 5,
-        feedback:`The hands-on labs were excellent. I learned how to deploy
+        feedback: `The hands-on labs were excellent. I learned how to deploy
 multi-container applications using Docker Compose.`
-          
       },
       {
         name: 'Vikram Singh',
         start: 5,
-        feedback:`I highly recommend this course for anyone looking to master
+        feedback: `I highly recommend this course for anyone looking to master
 Docker. The advanced topics like multi-stage builds and
 private registries were incredibly useful.`
       }
@@ -1318,30 +1311,29 @@ private registries were incredibly useful.`
     faqs: [
       {
         question: 'What are the prerequisites for this training?',
-        answer:
-          'Basic knowledge of Linux and system administration is recommended'
+        answer: 'Basic knowledge of Linux and system administration is recommended'
       },
       {
         question: 'Is this course suitable for beginners?',
-        answer:`Yes, the course covers Docker from the basics to
+        answer: `Yes, the course covers Docker from the basics to
 advanced topics, making it ideal for beginners and
 experienced professionals alike.`
       },
       {
         question: 'What tools are covered in this training?',
-        answer:`Docker CLI, Docker Compose, Docker Swarm, and
+        answer: `Docker CLI, Docker Compose, Docker Swarm, and
 monitoring/logging tools like Prometheus and ELK.`
       },
       {
         question: 'Does this training include real-world projects?',
-        answer:`Yes, the course includes practical exercises and projects
+        answer: `Yes, the course includes practical exercises and projects
 based on real-world scenarios.`
       },
       {
         question: 'Is this training aligned with Docker certifications?',
         answer: `Yes, the training prepares participants for Docker
 certifications and real-world challenges.`
-      },
+      }
     ],
     pdf: 'assets/courses-pdfs/RHCSA.pdf'
   },
@@ -1491,7 +1483,7 @@ certifications and real-world challenges.`
   [SLUGS.OPENSHIFT_AI]: {
     name: COURSE_LABEL[SLUGS.OPENSHIFT_AI],
     banner: '/assets/img/1.jpg',
-    about:`The <strong>OpenShift AI</strong> course is designed to help IT professionals
+    about: `The <strong>OpenShift AI</strong> course is designed to help IT professionals
 and developers build, train, and deploy AI/ML models on Red
 Hat OpenShift. This certication empowers individuals to
 leverage OpenShift's enterprise-grade infrastructure to
@@ -1504,7 +1496,7 @@ enhance their cloud-native application development skills.`,
       `Learn to integrate AI/ML workflows into OpenShift`,
       `Deploy scalable AI/ML pipelines using Kubernetesnative tools`,
       `Gain hands-on experience with Jupyter, TensorFlow, and
-OpenShift Pipelines`,
+OpenShift Pipelines`
     ],
     info: [
       {
@@ -1517,7 +1509,7 @@ OpenShift Pipelines`,
           `<strong>Instructor-led Training:</strong> Live, interactive training
 sessions delivered online or ofine by certified
 instructors`,
-`Self-paced Learning: Flexible options with access to recorded sessions, study materials, and virtual labs.`
+          `Self-paced Learning: Flexible options with access to recorded sessions, study materials, and virtual labs.`
         ]
       },
       {
@@ -1529,9 +1521,9 @@ instructors`,
           `Automating AI/ML pipelines with OpenShift Pipelines`,
           `Scaling AI/ML workloads across hybrid cloud
 environments`,
-`Securing and monitoring AI/ML workows on
+          `Securing and monitoring AI/ML workows on
 OpenShift`,
-`Best practices for AI/ML model lifecycle management`
+          `Best practices for AI/ML model lifecycle management`
         ]
       },
       {
@@ -1546,7 +1538,8 @@ OpenShift`,
     learningPath: [
       {
         title: 'Step 1',
-        description: 'Gain foundational knowledge of OpenShift and Kubernetes (e.g., DO188 or DO280).',
+        description:
+          'Gain foundational knowledge of OpenShift and Kubernetes (e.g., DO188 or DO280).',
         clickable: false,
         isStart: true
       },
@@ -1564,10 +1557,11 @@ OpenShift`,
       },
       {
         title: 'Step 4',
-        description: 'Apply the knowledge to real-world AI/ML projects or take advanced AI/ML certification courses.',
+        description:
+          'Apply the knowledge to real-world AI/ML projects or take advanced AI/ML certification courses.',
         clickable: false,
         isStart: false
-      },
+      }
     ],
     feedbacks: [
       {
@@ -1606,14 +1600,14 @@ workloads in hybrid cloud setups using OpenShift.`
         question: 'Does the course include hands-on labs?',
         answer: `Absolutely! The course includes extensive labs to provide
 real-world experience in deploying AI/ML workflows.`
-      },
+      }
     ],
     pdf: 'assets/courses-pdfs/RHCSA.pdf'
   },
   [SLUGS.REDHAT_OPENSHIFT]: {
     name: COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT],
     banner: '/assets/img/8.jpg',
-    about:`The <strong>DO316</strong> certication course focuses on integrating and
+    about: `The <strong>DO316</strong> certication course focuses on integrating and
 managing virtualization environments using Red Hat
 OpenShift. It equips IT professionals with the skills required
 to deploy, congure, and optimize Red Hat Virtualization as
@@ -1625,9 +1619,9 @@ and container orchestration.`,
     highlights: [
       `Learn to integrate Red Hat Virtualization with OpenShift
 environments`,
-`Manage and optimize containerized workloads in hybrid
+      `Manage and optimize containerized workloads in hybrid
 cloud infrastructures`,
-`Gain hands-on experience with real-world virtualization
+      `Gain hands-on experience with real-world virtualization
 challenges`
     ],
     info: [
@@ -1638,11 +1632,11 @@ challenges`
       {
         heading: 'Mode:',
         content: [
-         `<strong>Instructor-led Training:</strong> Live, interactive sessions
+          `<strong>Instructor-led Training:</strong> Live, interactive sessions
 available both online and ofine, led by certied
 instructors.
 `,
-`Self-paced Learning: Flexible learning options with
+          `Self-paced Learning: Flexible learning options with
 access to recorded sessions, detailed guides, and handson labs`
         ]
       },
@@ -1663,9 +1657,9 @@ access to recorded sessions, detailed guides, and handson labs`
         content: [
           `System administrators managing virtualization and
 container platforms`,
-`IT professionals working in hybrid cloud environments
+          `IT professionals working in hybrid cloud environments
 with OpenShift`,
-`DevOps engineers seeking expertise in managing
+          `DevOps engineers seeking expertise in managing
 virtualized workloads with OpenShift`
         ]
       }
@@ -1680,7 +1674,8 @@ virtualized workloads with OpenShift`
       },
       {
         title: 'Step 2',
-        description: 'Gain containerization skills by completing DO188 (Introduction to Containers).',
+        description:
+          'Gain containerization skills by completing DO188 (Introduction to Containers).',
         clickable: false,
         isStart: false
       },
@@ -1695,7 +1690,7 @@ virtualized workloads with OpenShift`
         description: ': Practice with hands-on labs and real-world projects.',
         clickable: false,
         isStart: false
-      },
+      }
     ],
     feedbacks: [
       {
@@ -1736,14 +1731,14 @@ and workloads using Red Hat Ansible Automation`
         answer: `You will learn to manage and optimize virtual machines
 and containerized workloads, secure hybrid cloud
 environments, and troubleshoot performance issues.`
-      },
+      }
     ],
     pdf: 'assets/courses-pdfs/RHCSA.pdf'
   },
   [SLUGS.RH358]: {
     name: COURSE_LABEL[SLUGS.RH358],
     banner: '/assets/img/7.jpg',
-    about:`The <strong>RH358</strong> course focuses on automating and managing Red
+    about: `The <strong>RH358</strong> course focuses on automating and managing Red
 Hat services in Linux environments. It equips system
 administrators and IT professionals with the skills to deploy,
 congure, and manage critical Red Hat services efciently.
@@ -1754,9 +1749,9 @@ administration, and IT operations.`,
     highlights: [
       `Master service management using advanced Red Hat
 tools`,
-`Automate critical system services for improved
+      `Automate critical system services for improved
 efficiency`,
-`Gain expertise in managing services across physical,
+      `Gain expertise in managing services across physical,
 virtual, and cloud infrastructures`
     ],
     info: [
@@ -1770,7 +1765,7 @@ virtual, and cloud infrastructures`
           `<strong>Instructor-led Training:</strong> Live sessions available online
 and ofine, delivered by certied trainers.`,
           `<strong>Self-paced Learning:</strong> Flexible modules with access to
-recorded content, resources, and labs.`,
+recorded content, resources, and labs.`
         ]
       },
       {
@@ -1779,11 +1774,11 @@ recorded content, resources, and labs.`,
           `Deploying and managing Red Hat services`,
           `Conguring and automating common services like DNS,
 HTTP, and FTP`,
-`Securing and auditing service configurations`,
-`Managing and optimizing service performance`,
-`Automating service deployment using Ansible`,
-`Troubleshooting common service-related issues`,
-`Scaling services across hybrid cloud environments`,
+          `Securing and auditing service configurations`,
+          `Managing and optimizing service performance`,
+          `Automating service deployment using Ansible`,
+          `Troubleshooting common service-related issues`,
+          `Scaling services across hybrid cloud environments`
         ]
       },
       {
@@ -1794,9 +1789,9 @@ and services`,
           `IT professionals seeking to automate service
 management tasks`,
           `DevOps engineers looking to enhance service
-deployment and configuration skills`,
+deployment and configuration skills`
         ]
-      },
+      }
     ],
     learningPath: [
       {
@@ -1820,7 +1815,8 @@ deployment and configuration skills`,
       },
       {
         title: 'Step 4',
-        description: 'Apply your skills in enterprise environments or pursue advanced certifications.',
+        description:
+          'Apply your skills in enterprise environments or pursue advanced certifications.',
         clickable: false,
         isStart: false
       }
@@ -1840,7 +1836,8 @@ deployment and configuration skills`,
     faqs: [
       {
         question: 'Do I need prior Red Hat certication to enroll in RH358?',
-        answer: 'While RHCSA is not mandatory, it is recommended for understanding foundational concepts.'
+        answer:
+          'While RHCSA is not mandatory, it is recommended for understanding foundational concepts.'
       },
       {
         question: 'Does RH358 cover automation with Ansible?',
@@ -1861,7 +1858,7 @@ physical, virtual, and cloud platforms`
         question: 'Does the course include troubleshooting techniques?',
         answer: `Absolutely! RH358 includes detailed modules on
 troubleshooting and optimizing service performance.`
-      },
+      }
     ],
     pdf: 'assets/courses-pdfs/RHCSA.pdf'
   },
@@ -1883,7 +1880,7 @@ Linux systems in diverse environments.`,
 cloud infrastructures`,
       `Master advanced SELinux congurations and access
 controls`,
-      `Implement threat detection and response strategie`,
+      `Implement threat detection and response strategie`
     ],
     info: [
       {
@@ -1895,7 +1892,7 @@ controls`,
         content: [
           `<strong>Instructor-led Training:</strong> Available online and ofine
 with live sessions conducted by certified instructors.`,
-`Self-paced Learning: Flexible learning with access to
+          `Self-paced Learning: Flexible learning with access to
 recorded lectures, resources, and practical labs.`
         ]
       },
@@ -1907,12 +1904,12 @@ configurations`,
           `Managing le system encryption and securing storage`,
           `Securing network services and trafc using rewalls and
 VPNs`,
-`Detecting and responding to threats in Linux
+          `Detecting and responding to threats in Linux
 environments`,
-`Conguring access controls and managing authentication`,
-`Ensuring compliance with security and audit standards`,
-`Securing Linux systems in cloud and virtualized
-environments`,
+          `Conguring access controls and managing authentication`,
+          `Ensuring compliance with security and audit standards`,
+          `Securing Linux systems in cloud and virtualized
+environments`
         ]
       },
       {
@@ -1922,7 +1919,7 @@ environments`,
 systems`,
           `System administrators managing RHEL environments in
 diverse platforms`,
-          `IT professionals seeking to specialize in Linux security`,
+          `IT professionals seeking to specialize in Linux security`
         ]
       }
     ],
@@ -1992,15 +1989,14 @@ tracks in security.`
         question: 'Does the course include compliance and audit topics?',
         answer: `Yes, the course covers compliance standards and auditing
 to ensure your Linux systems meet regulatory requirements.`
-      },
+      }
     ],
     pdf: 'assets/courses-pdfs/RHCSA.pdf'
   },
   [SLUGS.RHCE]: {
     name: COURSE_LABEL[SLUGS.RHCE],
     banner: '/assets/img/2.jpg',
-    about:
-      `The <strong>Red Hat Certied Engineer (RHCE)</strong> certication is a
+    about: `The <strong>Red Hat Certied Engineer (RHCE)</strong> certication is a
 globally recognized credential that validates your expertise in
 automating Red Hat Enterprise Linux (RHEL) tasks using
 Ansible and scripting. Building on the foundational skills of a
@@ -2045,7 +2041,7 @@ step toward mastering these domains.`,
           'IT professionals with RHCSA certication aiming to enhance their automation skills',
           'System administrators looking to advance to enterpriselevel roles',
           'DevOps professionals integrating Linux automation into their workows',
-          'Individuals seeking career opportunities in automation, DevOps, and cloud computing',
+          'Individuals seeking career opportunities in automation, DevOps, and cloud computing'
         ]
       }
     ],
@@ -2093,7 +2089,8 @@ step toward mastering these domains.`,
     faqs: [
       {
         question: 'Is RHCSA certication mandatory before pursuing RHCE?',
-        answer: 'Yes, RHCSA certication is a prerequisite for RHCE as it builds on foundational Linux skills'
+        answer:
+          'Yes, RHCSA certication is a prerequisite for RHCE as it builds on foundational Linux skills'
       },
       {
         question: 'What is the format of the RHCE exam?',
@@ -2126,7 +2123,7 @@ SELinux, rewalls, and system monitoring.`
         answer: `Red Hat offers the RH294 course, which provides
 comprehensive training on automation and scripting with
 Ansible.`
-      },
+      }
     ],
     pdf: 'assets/courses-pdfs/RHCSA.pdf'
   },
