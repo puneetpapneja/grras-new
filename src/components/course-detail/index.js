@@ -58,7 +58,7 @@ const CourseDetail = ({ slug }) => {
         sx={{
           width: '100%',
           height: { xs: '150px', md: '300px' },
-          backgroundImage: 'url(https://picsum.photos/1200/300)',
+          backgroundImage: `url(${courseDetail?.banner})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           position: 'relative',

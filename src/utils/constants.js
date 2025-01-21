@@ -44,141 +44,10 @@ export const COURSE_LABEL = {
   [SLUGS.WINTER_INTERNSHIP_TRANING]: 'Winter Internship'
 };
 
-export const REDHAT = [
-  {
-    label: COURSE_LABEL[SLUGS.RHCSA],
-    link: `/redhat/${SLUGS.RHCSA}`,
-    title: COURSE_LABEL[SLUGS.RHCSA],
-    description:
-      'course provides foundational skills for managing and configuring Red Hat Enterprise Linux systems, preparing students for the RHCSA certification exam.',
-    image: 'https://via.placeholder.com/300x140'
-  },
-  {
-    label: COURSE_LABEL[SLUGS.RHCE],
-    link: `/redhat/${SLUGS.RHCE}`,
-    title: COURSE_LABEL[SLUGS.RHCE],
-    description:
-      'This course is ideal for system administrators and DevOps professionals who want to advance their automation skills and enhance career opportunities.',
-    image: 'https://via.placeholder.com/300x140'
-  },
-  {
-    label: COURSE_LABEL[SLUGS.DO188],
-    link: `/redhat/${SLUGS.DO188}`,
-    title: COURSE_LABEL[SLUGS.DO188],
-    description:
-      ' introduces developers to building, managing, and deploying containerized applications using Podman. It also covers orchestration using OpenShift.',
-    image: 'https://via.placeholder.com/300x140'
-  },
-  {
-    label: COURSE_LABEL[SLUGS.DO280],
-    link: `/redhat/${SLUGS.DO280}`,
-    title: COURSE_LABEL[SLUGS.DO280],
-    description:
-      'equips administrators with the skills to configure, troubleshoot, and manage OpenShift clusters in production environments.',
-    image: 'https://via.placeholder.com/300x140'
-  },
-  {
-    label: COURSE_LABEL[SLUGS.DO380],
-    link: `/redhat/${SLUGS.DO380}`,
-    title: COURSE_LABEL[SLUGS.DO380],
-    description:
-      'focuses on managing and scaling OpenShift clusters for enterprise deployments, addressing advanced challenges in production environments.',
-    image: 'https://via.placeholder.com/300x140'
-  },
-  {
-    label: COURSE_LABEL[SLUGS.RH415],
-    link: `/redhat/${SLUGS.RH415}`,
-    title: COURSE_LABEL[SLUGS.RH415],
-    description:
-      'designed for security professionals to secure Red Hat Linux systems in physical, virtual, and cloud environments.',
-    image: 'https://via.placeholder.com/300x140'
-  },
-  {
-    label: COURSE_LABEL[SLUGS.RH358],
-    link: `/redhat/${SLUGS.RH358}`,
-    title: COURSE_LABEL[SLUGS.RH358],
-    description:
-      'trains administrators to configure and manage high-availability clusters using Red Hat technologies.',
-    image: 'https://via.placeholder.com/300x140'
-  },
-  {
-    label: COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT],
-    link: `/redhat/${SLUGS.REDHAT_OPENSHIFT}`,
-    title: COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT],
-    description:
-      'teaches administrators how to deploy and manage OpenShift Data Foundation (ODF) for containerized storage solutions.',
-    image: 'https://via.placeholder.com/300x140'
-  },
-  {
-    label: COURSE_LABEL[SLUGS.OPENSHIFT_AI],
-    link: `/redhat/${SLUGS.OPENSHIFT_AI}`,
-    title: COURSE_LABEL[SLUGS.OPENSHIFT_AI],
-    description:
-      'enables AI/ML professionals to build, train, and deploy AI/ML models on OpenShift.',
-    image: 'https://via.placeholder.com/300x140'
-  }
-];
-
-export const MENUES = [
-  {
-    label: 'Training & Certifications',
-    children: [
-      {
-        label: COURSE_LABEL.REDHAT,
-        children: REDHAT
-      },
-      {
-        label: COURSE_LABEL.KUBERNETES,
-        children: [{ label: COURSE_LABEL[SLUGS.CKA], link: `course/${SLUGS.CKA}` }]
-      },
-      {
-        label: COURSE_LABEL.DOCKER,
-        children: [
-          {
-            label: COURSE_LABEL[SLUGS.DOCKER_CONTAINER_TRANING],
-            link: `course/${SLUGS.DOCKER_CONTAINER_TRANING}`
-          }
-        ]
-      },
-      {
-        label: COURSE_LABEL.AWS,
-        children: [
-          {
-            label: COURSE_LABEL[SLUGS.AWS_Solutions_Architect_Associate],
-            link: `AWS/${SLUGS.AWS_Solutions_Architect_Associate}`
-          }
-        ]
-      },
-      {
-        label: COURSE_LABEL.DEVOPS,
-        children: [{ label: COURSE_LABEL[SLUGS.DEVOPS], link: SLUGS.DEVOPS }]
-      }
-    ]
-  },
-  {
-    label: COURSE_LABEL.DEGREE_PROGRAMS,
-    children: [{ label: COURSE_LABEL[SLUGS.BCA_DEGREE_PROGRAM], link: SLUGS.BCA_DEGREE_PROGRAM }]
-  },
-  {
-    label: COURSE_LABEL.INTERNSHIP,
-    children: [
-      {
-        label: COURSE_LABEL[SLUGS.SUMMER_INTERNSHIP_TRANING],
-        link: SLUGS.SUMMER_INTERNSHIP_TRANING
-      },
-      {
-        label: COURSE_LABEL[SLUGS.WINTER_INTERNSHIP_TRANING],
-        link: SLUGS.WINTER_INTERNSHIP_TRANING
-      }
-    ]
-  },
-  { label: 'About Grras', link: '/about' }
-];
-
 export const COURSE_DETAILS = {
   [SLUGS.AWS_Solutions_Architect_Associate]: {
     name: 'AWS Solutions Architect',
-    banner: '/assets/img/11.jpg',
+    banner: '/assets/images/aws-solution-architect.png',
     about: `The <strong>AWS Solutions Architect</strong> training program is designed to
 equip professionals with the knowledge and skills needed to
 design, deploy, and manage scalable, highly available, and
@@ -344,7 +213,7 @@ available`
   },
   [SLUGS.BCA_DEGREE_PROGRAM]: {
     name: 'BCA Degree Program',
-    banner: '/assets/img/12.jpg',
+    banner: '/assets/images/bca-degree.png',
     about: '',
     highlights: [
       'Hands-on training with real-world scenario',
@@ -487,7 +356,7 @@ available`
   },
   [SLUGS.CKA]: {
     name: 'Certified Kubernetes Administrator (CKA) course',
-    banner: '/assets/img/9.jpg',
+    banner: '/assets/images/kubernetes.png',
     about: `The <strong>Certied Kubernetes Administrator (CKA)</strong> training
 program is designed to help IT professionals master
 Kubernetes cluster management. This comprehensive course
@@ -640,7 +509,7 @@ syllabus.`
   },
   [SLUGS.DEVOPS]: {
     name: 'D0188 Exam',
-    banner: '/assets/img/1.jpg',
+    banner: '/assets/images/devops.png',
     about:
       'The <strong>DevOps and Cloud Computing</strong> course is designed to equip IT professionals with the skills necessary to deploy, manage, and automate cloud infrastructure using modern DevOps tools and practices. This course covers the core principles of DevOps—collaboration, automation, and continuous delivery—while integrating hands-on experience with cloud platforms like AWS, Azure, or Google Cloud. Participants will learn to build scalable cloud environments, automate infrastructure with tools like Terraform and Ansible, and manage CI/CD pipelines for seamless software delivery.',
     highlights: [
@@ -784,7 +653,7 @@ syllabus.`
   },
   [SLUGS.DO188]: {
     name: COURSE_LABEL[SLUGS.DO188],
-    banner: '/assets/img/3.jpg',
+    banner: '/assets/images/redhat-openshift-development-1.png',
     about: `The <strong>DO188</strong> certication course is designed to provide
 developers with a foundational understanding of container
 technology and its application in building, deploying, and
@@ -920,7 +789,7 @@ advanced OpenShift certications like DO280
   },
   [SLUGS.DO280]: {
     name: COURSE_LABEL[SLUGS.DO280],
-    banner: '/assets/img/4.jpg',
+    banner: '/assets/images/redhat-openshift-admin.png',
     about: `The <strong>DO280</strong> course focuses on teaching IT professionals how
 to congure, deploy, and manage Red Hat OpenShift clusters
 in production environments. As part of the Red Hat OpenShift
@@ -1049,7 +918,7 @@ DO280, validating your OpenShift administration skills.`
   },
   [SLUGS.DO380]: {
     name: COURSE_LABEL[SLUGS.DO380],
-    banner: '/assets/img/5.jpg',
+    banner: '/assets/images/redhat-openshift.png',
     about: `The <strong>DO380</strong> course is an advanced certication designed for
 IT professionals who manage large-scale OpenShift clusters
 in enterprise environments. This course equips you with the
@@ -1175,7 +1044,7 @@ logging and monitoring.`
   },
   [SLUGS.DOCKER_CONTAINER_TRANING]: {
     name: 'Docker Container and Podman',
-    banner: '/assets/img/10.jpg',
+    banner: '/assets/images/docker.png',
     about: `<strong>Docker</strong> is the leading platform for containerizing applications,
 enabling developers and system administrators to build, ship,
 and run applications efciently. This comprehensive Docker
@@ -1339,7 +1208,7 @@ certifications and real-world challenges.`
   },
   [SLUGS.MCA_DEGREE_PROGRAM]: {
     name: 'MCA Degree Program',
-    banner: '/assets/img/13.jpg',
+    banner: '/assets/images/',
     about: '',
     highlights: [
       'Hands-on training with real-world scenario',
@@ -1482,7 +1351,7 @@ certifications and real-world challenges.`
   },
   [SLUGS.OPENSHIFT_AI]: {
     name: COURSE_LABEL[SLUGS.OPENSHIFT_AI],
-    banner: '/assets/img/1.jpg',
+    banner: '/assets/images/openshift-ai.png',
     about: `The <strong>OpenShift AI</strong> course is designed to help IT professionals
 and developers build, train, and deploy AI/ML models on Red
 Hat OpenShift. This certication empowers individuals to
@@ -1606,7 +1475,7 @@ real-world experience in deploying AI/ML workflows.`
   },
   [SLUGS.REDHAT_OPENSHIFT]: {
     name: COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT],
-    banner: '/assets/img/8.jpg',
+    banner: '/assets/images/redhat-virtual.png',
     about: `The <strong>DO316</strong> certication course focuses on integrating and
 managing virtualization environments using Red Hat
 OpenShift. It equips IT professionals with the skills required
@@ -1737,7 +1606,7 @@ environments, and troubleshoot performance issues.`
   },
   [SLUGS.RH358]: {
     name: COURSE_LABEL[SLUGS.RH358],
-    banner: '/assets/img/7.jpg',
+    banner: '/assets/images/redhat-service-automation.png',
     about: `The <strong>RH358</strong> course focuses on automating and managing Red
 Hat services in Linux environments. It equips system
 administrators and IT professionals with the skills to deploy,
@@ -1864,7 +1733,7 @@ troubleshooting and optimizing service performance.`
   },
   [SLUGS.RH415]: {
     name: COURSE_LABEL[SLUGS.RH415],
-    banner: '/assets/img/6.jpg',
+    banner: '/assets/images/redhat-security.png',
     about: `The <strong>RH415</strong> course, also known as Red Hat Security: Linux in
 Physical, Virtual, and Cloud, is designed to equip IT
 professionals with the skills required to secure Red Hat
@@ -1995,7 +1864,7 @@ to ensure your Linux systems meet regulatory requirements.`
   },
   [SLUGS.RHCE]: {
     name: COURSE_LABEL[SLUGS.RHCE],
-    banner: '/assets/img/2.jpg',
+    banner: '/assets/images/redhat-certified-engineer.png',
     about: `The <strong>Red Hat Certied Engineer (RHCE)</strong> certication is a
 globally recognized credential that validates your expertise in
 automating Red Hat Enterprise Linux (RHEL) tasks using
@@ -2129,7 +1998,7 @@ Ansible.`
   },
   [SLUGS.RHCSA]: {
     name: COURSE_LABEL[SLUGS.RHCSA],
-    banner: '/assets/img/1.jpg',
+    banner: '/assets/images/redhat-system-admin.png',
     about: `<strong>Red Hat Certified System Administrator (RHCSA)</strong> is a globally recognized certification that validates your expertise in Linux system administration. This certification is designed to build a strong foundation for managing Red Hat Enterprise Linux (RHEL) systems and is highly sought after by IT professionals and organizations worldwide. Whether you're aiming for a career in DevOps, cloud computing, or IT infrastructure management, RHCSA is your first step toward mastering Linux system administration.`,
     highlights: [
       'Hands-on training with real-world scenario',
@@ -2272,7 +2141,7 @@ Ansible.`
   },
   [SLUGS.SUMMER_INTERNSHIP_TRANING]: {
     name: 'Summer Internship Traning',
-    banner: '/assets/img/14.jpg',
+    banner: '/assets/images/summer-internship.png',
     about: `Get ahead of the competition by utilizing your summer break to gain hands-on experience with our Summer Internship Program. Tailored for college students, this internship is designed to help you develop real-world skills in DevOps, cloud computing, Python, data science, and more. Whether you're a beginner or looking to enhance your knowledge, this program is perfect for all levels.`,
     highlights: [
       'Hands-on training with real-world scenario',
@@ -2414,7 +2283,7 @@ Ansible.`
   },
   [SLUGS.WINTER_INTERNSHIP_TRANING]: {
     name: 'Winter Internship Traning',
-    banner: '/assets/img/15.jpg',
+    banner: '/assets/images/winter-internship.png',
     about:
       'Make the most of your winter break by enrolling in our Winter Internship Program, specifically tailored for students looking to upskill during their holidays. This program offers a mix of theoretical learning and practical exposure in the latest technologies like DevOps, Python, and Red Hat certifications. Boost your career prospects with hands-on experience and industry-recognized certifications.',
     highlights: [
@@ -2556,3 +2425,137 @@ Ansible.`
     ]
   }
 };
+
+export const REDHAT = [
+  {
+    label: COURSE_LABEL[SLUGS.RHCSA],
+    link: `/redhat/${SLUGS.RHCSA}`,
+    title: COURSE_LABEL[SLUGS.RHCSA],
+    description:
+      'course provides foundational skills for managing and configuring Red Hat Enterprise Linux systems, preparing students for the RHCSA certification exam.',
+    image: '/assets/images/'
+  },
+  {
+    label: COURSE_LABEL[SLUGS.RHCE],
+    link: `/redhat/${SLUGS.RHCE}`,
+    title: COURSE_LABEL[SLUGS.RHCE],
+    description:
+      'This course is ideal for system administrators and DevOps professionals who want to advance their automation skills and enhance career opportunities.',
+    image: 'https://via.placeholder.com/300x140'
+  },
+  {
+    label: COURSE_LABEL[SLUGS.DO188],
+    link: `/redhat/${SLUGS.DO188}`,
+    title: COURSE_LABEL[SLUGS.DO188],
+    description:
+      ' introduces developers to building, managing, and deploying containerized applications using Podman. It also covers orchestration using OpenShift.',
+    image: 'https://via.placeholder.com/300x140'
+  },
+  {
+    label: COURSE_LABEL[SLUGS.DO280],
+    link: `/redhat/${SLUGS.DO280}`,
+    title: COURSE_LABEL[SLUGS.DO280],
+    description:
+      'equips administrators with the skills to configure, troubleshoot, and manage OpenShift clusters in production environments.',
+    image: 'https://via.placeholder.com/300x140'
+  },
+  {
+    label: COURSE_LABEL[SLUGS.DO380],
+    link: `/redhat/${SLUGS.DO380}`,
+    title: COURSE_LABEL[SLUGS.DO380],
+    description:
+      'focuses on managing and scaling OpenShift clusters for enterprise deployments, addressing advanced challenges in production environments.',
+    image: 'https://via.placeholder.com/300x140'
+  },
+  {
+    label: COURSE_LABEL[SLUGS.RH415],
+    link: `/redhat/${SLUGS.RH415}`,
+    title: COURSE_LABEL[SLUGS.RH415],
+    description:
+      'designed for security professionals to secure Red Hat Linux systems in physical, virtual, and cloud environments.',
+    image: 'https://via.placeholder.com/300x140'
+  },
+  {
+    label: COURSE_LABEL[SLUGS.RH358],
+    link: `/redhat/${SLUGS.RH358}`,
+    title: COURSE_LABEL[SLUGS.RH358],
+    description:
+      'trains administrators to configure and manage high-availability clusters using Red Hat technologies.',
+    image: 'https://via.placeholder.com/300x140'
+  },
+  {
+    label: COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT],
+    link: `/redhat/${SLUGS.REDHAT_OPENSHIFT}`,
+    title: COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT],
+    description:
+      'teaches administrators how to deploy and manage OpenShift Data Foundation (ODF) for containerized storage solutions.',
+    image: 'https://via.placeholder.com/300x140'
+  },
+  {
+    label: COURSE_LABEL[SLUGS.OPENSHIFT_AI],
+    link: `/redhat/${SLUGS.OPENSHIFT_AI}`,
+    title: COURSE_LABEL[SLUGS.OPENSHIFT_AI],
+    description:
+      'enables AI/ML professionals to build, train, and deploy AI/ML models on OpenShift.',
+    image: 'https://via.placeholder.com/300x140'
+  }
+];
+
+export const MENUES = [
+  {
+    label: 'Training & Certifications',
+    children: [
+      {
+        label: COURSE_LABEL.REDHAT,
+        children: REDHAT
+      },
+      {
+        label: COURSE_LABEL.KUBERNETES,
+        children: [{ label: COURSE_LABEL[SLUGS.CKA], link: `course/${SLUGS.CKA}` }]
+      },
+      {
+        label: COURSE_LABEL.DOCKER,
+        children: [
+          {
+            label: COURSE_LABEL[SLUGS.DOCKER_CONTAINER_TRANING],
+            link: `course/${SLUGS.DOCKER_CONTAINER_TRANING}`
+          }
+        ]
+      },
+      {
+        label: COURSE_LABEL.AWS,
+        children: [
+          {
+            label: COURSE_LABEL[SLUGS.AWS_Solutions_Architect_Associate],
+            link: `AWS/${SLUGS.AWS_Solutions_Architect_Associate}`
+          }
+        ]
+      },
+      {
+        label: COURSE_LABEL.DEVOPS,
+        children: [{ label: COURSE_LABEL[SLUGS.DEVOPS], link: SLUGS.DEVOPS }]
+      }
+    ]
+  },
+  {
+    label: COURSE_LABEL.DEGREE_PROGRAMS,
+    children: [{ label: COURSE_LABEL[SLUGS.BCA_DEGREE_PROGRAM], link: SLUGS.BCA_DEGREE_PROGRAM }]
+  },
+  {
+    label: COURSE_LABEL.INTERNSHIP,
+    children: [
+      {
+        label: COURSE_LABEL[SLUGS.SUMMER_INTERNSHIP_TRANING],
+        link: SLUGS.SUMMER_INTERNSHIP_TRANING
+      },
+      {
+        label: COURSE_LABEL[SLUGS.WINTER_INTERNSHIP_TRANING],
+        link: SLUGS.WINTER_INTERNSHIP_TRANING
+      }
+    ]
+  },
+  { label: 'About Grras', link: '/about' }
+];
+
+
+

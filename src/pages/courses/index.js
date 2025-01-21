@@ -15,12 +15,14 @@ const StyledCard = styled(Card)(() => ({
   justifyContent: 'space-between',
   '&:hover': {
     transform: 'scale(1.05)'
-    // boxShadow: "0 10px 20px rgba(255, 0, 0, 0.6)",
   }
 }));
 
 const StyledCardMedia = styled(CardMedia)({
-  height: 140
+  height: 140,
+  width: '100%',
+  objectFit: 'contain',
+  backgroundColor: '#000' // Optional: Add a background color to highlight the image area
 });
 
 const StyledCardContent = styled(CardContent)({
@@ -80,7 +82,9 @@ Courses.propTypes = {
   courses: PropTypes.arrayOf(
     PropTypes.shape({
       link: PropTypes.string,
-      description: PropTypes.string
+      description: PropTypes.string,
+      title: PropTypes.string,
+      image: PropTypes.string
     })
   )
 };
