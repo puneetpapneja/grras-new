@@ -2556,6 +2556,3 @@ export const MENUES = [
   },
   { label: 'About Grras', link: '/about' }
 ];
-
-
-
