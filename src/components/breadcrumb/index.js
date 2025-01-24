@@ -50,7 +50,7 @@ const Breadcrumb = () => {
         }}
       >
         {breadcrumbs.map((breadcrumb, index) =>
-          index < breadcrumbs.length - 1 ? (
+          index <= breadcrumbs.length - 1 ? (
             <Link
               key={breadcrumb.path}
               className="breadcrumb-link"

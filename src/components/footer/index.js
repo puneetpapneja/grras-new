@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Container, Grid2, Typography, Link, Divider } from '@mui/material';
 import SocialMedia from 'components/social-media';
+import { REDHAT } from 'utils/constants';
 
 const Footer = () => {
   return (
@@ -25,39 +26,6 @@ const Footer = () => {
             <SocialMedia />
           </Grid2>
 
-          {/* Quick Links Section */}
-          <Grid2 item xs={12} sm={6} md={4}>
-            <Typography
-              variant="h6"
-              sx={{ marginBottom: 2, fontWeight: 'bold', textTransform: 'uppercase' }}
-            >
-              Learning Options
-            </Typography>
-            <Box>
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ display: 'block', marginBottom: 1, '&:hover': { color: '#f44336' } }}
-              >
-                Online Courses
-              </Link>
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ display: 'block', marginBottom: 1, '&:hover': { color: '#f44336' } }}
-              >
-                Bootcamps
-              </Link>
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ display: 'block', marginBottom: 1, '&:hover': { color: '#f44336' } }}
-              >
-                Certifications
-              </Link>
-            </Box>
-          </Grid2>
-
           {/* Top Courses Section */}
           <Grid2 item xs={12} sm={6} md={4}>
             <Typography
@@ -67,34 +35,16 @@ const Footer = () => {
               Top Courses
             </Typography>
             <Box>
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ display: 'block', marginBottom: 1, '&:hover': { color: '#f44336' } }}
-              >
-                Full Stack Web Development
-              </Link>
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ display: 'block', marginBottom: 1, '&:hover': { color: '#f44336' } }}
-              >
-                Data Science
-              </Link>
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ display: 'block', marginBottom: 1, '&:hover': { color: '#f44336' } }}
-              >
-                Machine Learning
-              </Link>
-              <Link
-                href="#"
-                color="inherit"
-                sx={{ display: 'block', marginBottom: 1, '&:hover': { color: '#f44336' } }}
-              >
-                UI/UX Design
-              </Link>
+              {REDHAT?.slice(0,8)?.map(course=>
+                  <Link
+                  to={course.link}
+                  color="inherit"
+                  sx={{ display: 'block', marginBottom: 1, '&:hover': { color: '#f44336', cursor: 'pointer' } }}
+                >
+                  {course.title}
+                </Link>
+              )}
+             
             </Box>
           </Grid2>
           {/* Top Courses Section */}
@@ -122,7 +72,7 @@ const Footer = () => {
         <Divider sx={{ margin: '20px 0', backgroundColor: '#f44336' }} />
         <Box sx={{ textAlign: 'center' }}>
           <Typography variant="body2" sx={{ color: 'white' }}>
-            © {new Date().getFullYear()} Your Company Name. All Rights Reserved.
+            © {new Date().getFullYear()} Grras. All Rights Reserved.
           </Typography>
         </Box>
       </Container>

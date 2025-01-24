@@ -53,7 +53,6 @@ export const getRoutes = () => [
     errorElement: <NotFoundPage />,
     children: [
       ...routes, // Ensure all routes, including dynamic ones, are added here
-      { path: '*', element: <NotFoundPage /> } // Catch-all for undefined routes
     ]
   }
 ];

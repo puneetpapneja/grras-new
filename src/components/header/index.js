@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   AppBar,
   Toolbar,
@@ -23,7 +23,7 @@ import { useTheme, useMediaQuery } from '@mui/material';
 import SocialMedia from 'components/social-media';
 import Contact from 'components/contact';
 import { MENUES } from 'utils/constants';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { chunkArray } from 'utils';
 
 const Header = () => {
@@ -32,6 +32,7 @@ const Header = () => {
   const [hoveredChild, setHoveredChild] = useState(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [openSubMenus, setOpenSubMenus] = useState({}); // Track open submenus in the drawer
+  const location = useLocation();
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -41,6 +42,9 @@ const Header = () => {
     setHoveredMenu(menu);
     firstChild && setHoveredChild(firstChild);
   };
+  useEffect(()=>{
+    setHoveredMenu(null);
+  },[location])
 
   const handleMenuClose = () => {
     setAnchorEl(null);

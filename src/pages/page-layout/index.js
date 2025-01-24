@@ -9,10 +9,6 @@ import { useLocation } from 'react-router-dom';
 
 const PageLayout = ({ children }) => {
   useEffect(() => {}, []);
-  const location = useLocation();
-  React.useEffect(() => {
-    console.log('Current path:', location.pathname);
-  }, [location]);
   return (
     <Grid2 className="full-height">
       <Header />
