@@ -19,7 +19,7 @@ const StyledCard = styled(Card)(() => ({
 }));
 
 const StyledCardMedia = styled(CardMedia)({
-  height: 140,
+  height: 275,
   width: '100%',
   objectFit: 'contain',
   backgroundColor: '#000' // Optional: Add a background color to highlight the image area
@@ -30,7 +30,7 @@ const StyledCardContent = styled(CardContent)({
   flexGrow: 1
 });
 
-const Courses = ({ courses = [], parent = 'Our' }) => {
+const Courses = ({ courses = [], parent = 'Our', showTitle = false }) => {
   return (
     <Box sx={{ padding: 4, backgroundColor: 'white', minHeight: '100vh' }}>
       <Typography
@@ -63,7 +63,7 @@ const Courses = ({ courses = [], parent = 'Our' }) => {
               <StyledCard>
                 <StyledCardMedia image={course.image} title={course.title} />
                 <StyledCardContent>
-                  <Typography variant="h6">{course.title}</Typography>
+                  {showTitle ? <Typography variant="h6">{course.title}</Typography> : null}
                   <Typography variant="body2" color="rgba(255,255,255,0.7)">
                     {course.description}
                   </Typography>

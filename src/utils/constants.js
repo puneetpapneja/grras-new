@@ -48,6 +48,7 @@ export const COURSE_DETAILS = {
   [SLUGS.AWS_Solutions_Architect_Associate]: {
     name: 'AWS Solutions Architect',
     banner: '/assets/images/aws-solution-architect.png',
+    mbBanner: '/assets/images/aws-solution-architect-mb.png',
     about: `The <strong>AWS Solutions Architect</strong> training program is designed to
 equip professionals with the knowledge and skills needed to
 design, deploy, and manage scalable, highly available, and
@@ -214,6 +215,7 @@ available`
   [SLUGS.BCA_DEGREE_PROGRAM]: {
     name: 'BCA Degree Program',
     banner: '/assets/images/bca-degree.png',
+    mbBanner: '/assets/images/bca-degree-mb.png',
     about: '',
     highlights: [
       'Hands-on training with real-world scenario',
@@ -357,6 +359,7 @@ available`
   [SLUGS.CKA]: {
     name: 'Certified Kubernetes Administrator (CKA) course',
     banner: '/assets/images/kubernetes.png',
+    mbBanner: '/assets/images/kubernetes-mb.png',
     about: `The <strong>Certied Kubernetes Administrator (CKA)</strong> training
 program is designed to help IT professionals master
 Kubernetes cluster management. This comprehensive course
@@ -510,6 +513,7 @@ syllabus.`
   [SLUGS.DEVOPS]: {
     name: 'D0188 Exam',
     banner: '/assets/images/devops.png',
+    mbBanner: '/assets/images/devops-mb.png',
     about:
       'The <strong>DevOps and Cloud Computing</strong> course is designed to equip IT professionals with the skills necessary to deploy, manage, and automate cloud infrastructure using modern DevOps tools and practices. This course covers the core principles of DevOps—collaboration, automation, and continuous delivery—while integrating hands-on experience with cloud platforms like AWS, Azure, or Google Cloud. Participants will learn to build scalable cloud environments, automate infrastructure with tools like Terraform and Ansible, and manage CI/CD pipelines for seamless software delivery.',
     highlights: [
@@ -654,6 +658,7 @@ syllabus.`
   [SLUGS.DO188]: {
     name: COURSE_LABEL[SLUGS.DO188],
     banner: '/assets/images/redhat-openshift-development-1.png',
+    mbBanner: '/assets/images/redhat-openshift-development-1-mb.png',
     about: `The <strong>DO188</strong> certication course is designed to provide
 developers with a foundational understanding of container
 technology and its application in building, deploying, and
@@ -790,6 +795,7 @@ advanced OpenShift certications like DO280
   [SLUGS.DO280]: {
     name: COURSE_LABEL[SLUGS.DO280],
     banner: '/assets/images/redhat-openshift-admin.png',
+    mbBanner: '/assets/images/redhat-openshift-admin-mb.png',
     about: `The <strong>DO280</strong> course focuses on teaching IT professionals how
 to congure, deploy, and manage Red Hat OpenShift clusters
 in production environments. As part of the Red Hat OpenShift
@@ -919,6 +925,7 @@ DO280, validating your OpenShift administration skills.`
   [SLUGS.DO380]: {
     name: COURSE_LABEL[SLUGS.DO380],
     banner: '/assets/images/redhat-openshift.png',
+    mbBanner: '/assets/images/redhat-openshift-mb.png',
     about: `The <strong>DO380</strong> course is an advanced certication designed for
 IT professionals who manage large-scale OpenShift clusters
 in enterprise environments. This course equips you with the
@@ -1045,6 +1052,7 @@ logging and monitoring.`
   [SLUGS.DOCKER_CONTAINER_TRANING]: {
     name: 'Docker Container and Podman',
     banner: '/assets/images/docker.png',
+    mbBanner: '/assets/images/docker-mb.png',
     about: `<strong>Docker</strong> is the leading platform for containerizing applications,
 enabling developers and system administrators to build, ship,
 and run applications efciently. This comprehensive Docker
@@ -1352,6 +1360,7 @@ certifications and real-world challenges.`
   [SLUGS.OPENSHIFT_AI]: {
     name: COURSE_LABEL[SLUGS.OPENSHIFT_AI],
     banner: '/assets/images/openshift-ai.png',
+    mbBanner: '/assets/images/openshift-ai-mb.png',
     about: `The <strong>OpenShift AI</strong> course is designed to help IT professionals
 and developers build, train, and deploy AI/ML models on Red
 Hat OpenShift. This certication empowers individuals to
@@ -1476,6 +1485,7 @@ real-world experience in deploying AI/ML workflows.`
   [SLUGS.REDHAT_OPENSHIFT]: {
     name: COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT],
     banner: '/assets/images/redhat-virtual.png',
+    mbBanner: '/assets/images/redhat-virtual-mb.png',
     about: `The <strong>DO316</strong> certication course focuses on integrating and
 managing virtualization environments using Red Hat
 OpenShift. It equips IT professionals with the skills required
@@ -1607,6 +1617,7 @@ environments, and troubleshoot performance issues.`
   [SLUGS.RH358]: {
     name: COURSE_LABEL[SLUGS.RH358],
     banner: '/assets/images/redhat-service-automation.png',
+    mbBanner: '/assets/images/redhat-service-automation-mb.png',
     about: `The <strong>RH358</strong> course focuses on automating and managing Red
 Hat services in Linux environments. It equips system
 administrators and IT professionals with the skills to deploy,
@@ -1734,6 +1745,7 @@ troubleshooting and optimizing service performance.`
   [SLUGS.RH415]: {
     name: COURSE_LABEL[SLUGS.RH415],
     banner: '/assets/images/redhat-security.png',
+    mbBanner: '/assets/images/redhat-security-mb.png',
     about: `The <strong>RH415</strong> course, also known as Red Hat Security: Linux in
 Physical, Virtual, and Cloud, is designed to equip IT
 professionals with the skills required to secure Red Hat
@@ -1865,6 +1877,7 @@ to ensure your Linux systems meet regulatory requirements.`
   [SLUGS.RHCE]: {
     name: COURSE_LABEL[SLUGS.RHCE],
     banner: '/assets/images/redhat-certified-engineer.png',
+    mbBanner: '/assets/images/redhat-certified-engineer-mb.png',
     about: `The <strong>Red Hat Certied Engineer (RHCE)</strong> certication is a
 globally recognized credential that validates your expertise in
 automating Red Hat Enterprise Linux (RHEL) tasks using
@@ -1999,6 +2012,7 @@ Ansible.`
   [SLUGS.RHCSA]: {
     name: COURSE_LABEL[SLUGS.RHCSA],
     banner: '/assets/images/redhat-system-admin.png',
+    mbBanner: '/assets/images/rhcsa-mb.png',
     about: `<strong>Red Hat Certified System Administrator (RHCSA)</strong> is a globally recognized certification that validates your expertise in Linux system administration. This certification is designed to build a strong foundation for managing Red Hat Enterprise Linux (RHEL) systems and is highly sought after by IT professionals and organizations worldwide. Whether you're aiming for a career in DevOps, cloud computing, or IT infrastructure management, RHCSA is your first step toward mastering Linux system administration.`,
     highlights: [
       'Hands-on training with real-world scenario',
@@ -2142,6 +2156,7 @@ Ansible.`
   [SLUGS.SUMMER_INTERNSHIP_TRANING]: {
     name: 'Summer Internship Traning',
     banner: '/assets/images/summer-internship.png',
+    mbBanner: '/assets/images/summer-internship-mb.png',
     about: `Get ahead of the competition by utilizing your summer break to gain hands-on experience with our Summer Internship Program. Tailored for college students, this internship is designed to help you develop real-world skills in DevOps, cloud computing, Python, data science, and more. Whether you're a beginner or looking to enhance your knowledge, this program is perfect for all levels.`,
     highlights: [
       'Hands-on training with real-world scenario',
@@ -2284,6 +2299,7 @@ Ansible.`
   [SLUGS.WINTER_INTERNSHIP_TRANING]: {
     name: 'Winter Internship Traning',
     banner: '/assets/images/winter-internship.png',
+    mbBanner: '/assets/images/winter-internship-mb.png',
     about:
       'Make the most of your winter break by enrolling in our Winter Internship Program, specifically tailored for students looking to upskill during their holidays. This program offers a mix of theoretical learning and practical exposure in the latest technologies like DevOps, Python, and Red Hat certifications. Boost your career prospects with hands-on experience and industry-recognized certifications.',
     highlights: [
@@ -2433,7 +2449,7 @@ export const REDHAT = [
     title: COURSE_LABEL[SLUGS.RHCSA],
     description:
       'course provides foundational skills for managing and configuring Red Hat Enterprise Linux systems, preparing students for the RHCSA certification exam.',
-    image: '/assets/images/'
+    image: '/assets/images/rhcsa-mb.png'
   },
   {
     label: COURSE_LABEL[SLUGS.RHCE],
@@ -2441,7 +2457,7 @@ export const REDHAT = [
     title: COURSE_LABEL[SLUGS.RHCE],
     description:
       'This course is ideal for system administrators and DevOps professionals who want to advance their automation skills and enhance career opportunities.',
-    image: 'https://via.placeholder.com/300x140'
+    image: '/assets/images/redhat-certified-engineer-mb.png',
   },
   {
     label: COURSE_LABEL[SLUGS.DO188],
@@ -2449,7 +2465,7 @@ export const REDHAT = [
     title: COURSE_LABEL[SLUGS.DO188],
     description:
       ' introduces developers to building, managing, and deploying containerized applications using Podman. It also covers orchestration using OpenShift.',
-    image: 'https://via.placeholder.com/300x140'
+    image: '/assets/images/redhat-openshift-development-1-mb.png'
   },
   {
     label: COURSE_LABEL[SLUGS.DO280],
@@ -2457,7 +2473,7 @@ export const REDHAT = [
     title: COURSE_LABEL[SLUGS.DO280],
     description:
       'equips administrators with the skills to configure, troubleshoot, and manage OpenShift clusters in production environments.',
-    image: 'https://via.placeholder.com/300x140'
+    image: '/assets/images/redhat-openshift-admin-mb.png'
   },
   {
     label: COURSE_LABEL[SLUGS.DO380],
@@ -2465,7 +2481,7 @@ export const REDHAT = [
     title: COURSE_LABEL[SLUGS.DO380],
     description:
       'focuses on managing and scaling OpenShift clusters for enterprise deployments, addressing advanced challenges in production environments.',
-    image: 'https://via.placeholder.com/300x140'
+    image: '/assets/images/redhat-openshift-mb.png'
   },
   {
     label: COURSE_LABEL[SLUGS.RH415],
@@ -2473,7 +2489,7 @@ export const REDHAT = [
     title: COURSE_LABEL[SLUGS.RH415],
     description:
       'designed for security professionals to secure Red Hat Linux systems in physical, virtual, and cloud environments.',
-    image: 'https://via.placeholder.com/300x140'
+    image: '/assets/images/redhat-security-mb.png'
   },
   {
     label: COURSE_LABEL[SLUGS.RH358],
@@ -2481,7 +2497,7 @@ export const REDHAT = [
     title: COURSE_LABEL[SLUGS.RH358],
     description:
       'trains administrators to configure and manage high-availability clusters using Red Hat technologies.',
-    image: 'https://via.placeholder.com/300x140'
+    image: '/assets/images/redhat-service-automation-mb.png'
   },
   {
     label: COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT],
@@ -2489,7 +2505,7 @@ export const REDHAT = [
     title: COURSE_LABEL[SLUGS.REDHAT_OPENSHIFT],
     description:
       'teaches administrators how to deploy and manage OpenShift Data Foundation (ODF) for containerized storage solutions.',
-    image: 'https://via.placeholder.com/300x140'
+    image: '/assets/images/redhat-virtual-mb.png'
   },
   {
     label: COURSE_LABEL[SLUGS.OPENSHIFT_AI],
@@ -2497,7 +2513,7 @@ export const REDHAT = [
     title: COURSE_LABEL[SLUGS.OPENSHIFT_AI],
     description:
       'enables AI/ML professionals to build, train, and deploy AI/ML models on OpenShift.',
-    image: 'https://via.placeholder.com/300x140'
+    image: '/assets/images/openshift-ai-mb.png'
   }
 ];
 

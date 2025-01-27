@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Box, Button, Typography, Tab, Tabs } from '@mui/material';
+import { Box, Button, Typography, Tab, Tabs, useMediaQuery, useTheme } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download'; // Import the download icon
 import { styled } from '@mui/system';
 import { COURSE_DETAILS } from 'utils/constants';
@@ -32,9 +32,10 @@ const StyledTab = styled(Tab)(() => ({
   }
 }));
 
-const CourseDetail = ({ slug }) => {
+const CourseDetail = ({ slug, showTitle = false }) => {
   const [selectedTab, setSelectedTab] = useState(0);
-
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const courseDetail = COURSE_DETAILS[slug];
   const buttonsRef = useRef(null); // Reference to track buttons' position
 
@@ -50,15 +51,15 @@ const CourseDetail = ({ slug }) => {
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
-
+console.log("showTitle", showTitle)
   return (
     <Box sx={{ backgroundColor: 'white', paddingBottom: '20px' }}>
       {/* Banner Image */}
       <Box
         sx={{
           width: '100%',
-          height: { xs: '150px', md: '300px' },
-          backgroundImage: `url(${courseDetail?.banner})`,
+          height: { xs: '275px', md: '300px' },
+          backgroundImage: `url(${isMobile ?courseDetail?.mbBanner :courseDetail?.banner})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           position: 'relative',
@@ -67,7 +68,7 @@ const CourseDetail = ({ slug }) => {
       />
 
       {/* Sticky Title */}
-      <Box
+     {showTitle ?  <Box
         sx={{
           position: 'sticky',
           top: 0, // Sticky at the very top of the screen
@@ -84,14 +85,14 @@ const CourseDetail = ({ slug }) => {
         <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
           {courseDetail?.name}
         </Typography>
-      </Box>
+      </Box> : null }
 
       {/* Buttons Section */}
       <Box
         ref={buttonsRef} // Attach the ref to track the buttons' position
         sx={{
           position: 'sticky',
-          top: { xs: '70px', sm: '40px' }, // Set a smaller top value to eliminate the gap on mobile view
+          top: { xs: '50px', sm: '40px' }, // Set a smaller top value to eliminate the gap on mobile view
           zIndex: 1000, // Ensure buttons stay under the title
           backgroundColor: 'white',
           display: 'flex',
@@ -188,7 +189,8 @@ const CourseDetail = ({ slug }) => {
 };
 
 CourseDetail.propTypes = {
-  slug: PropTypes.string
+  slug: PropTypes.string,
+  showTitle: PropTypes.bool
 };
 
 export default CourseDetail;

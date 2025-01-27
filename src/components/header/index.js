@@ -42,9 +42,9 @@ const Header = () => {
     setHoveredMenu(menu);
     firstChild && setHoveredChild(firstChild);
   };
-  useEffect(()=>{
+  useEffect(() => {
     setHoveredMenu(null);
-  },[location])
+  }, [location]);
 
   const handleMenuClose = () => {
     setAnchorEl(null);

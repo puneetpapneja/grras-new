@@ -35,16 +35,20 @@ const Footer = () => {
               Top Courses
             </Typography>
             <Box>
-              {REDHAT?.slice(0,8)?.map(course=>
-                  <Link
+              {REDHAT?.slice(0, 8)?.map((course, idx) => (
+                <Link
+                  key={`top-${idx}`}
                   to={course.link}
                   color="inherit"
-                  sx={{ display: 'block', marginBottom: 1, '&:hover': { color: '#f44336', cursor: 'pointer' } }}
+                  sx={{
+                    display: 'block',
+                    marginBottom: 1,
+                    '&:hover': { color: '#f44336', cursor: 'pointer' }
+                  }}
                 >
                   {course.title}
                 </Link>
-              )}
-             
+              ))}
             </Box>
           </Grid2>
           {/* Top Courses Section */}

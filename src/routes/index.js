@@ -52,7 +52,7 @@ export const getRoutes = () => [
     element: <PageLayout />,
     errorElement: <NotFoundPage />,
     children: [
-      ...routes, // Ensure all routes, including dynamic ones, are added here
+      ...routes // Ensure all routes, including dynamic ones, are added here
     ]
   }
 ];
