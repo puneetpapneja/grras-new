@@ -76,7 +76,6 @@ const ScrollToTop = () => {
     };
   }, []);
 
-
   return (
     <ScrollToTopButton showButton={showButton} onClick={handleScrollToTop}>
       ↑ {/* Up arrow icon */}

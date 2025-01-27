@@ -51,7 +51,6 @@ const CourseDetail = ({ slug, showTitle = false }) => {
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
-console.log("showTitle", showTitle)
   return (
     <Box sx={{ backgroundColor: 'white', paddingBottom: '20px' }}>
       {/* Banner Image */}
@@ -59,7 +58,7 @@ console.log("showTitle", showTitle)
         sx={{
           width: '100%',
           height: { xs: '275px', md: '300px' },
-          backgroundImage: `url(${isMobile ?courseDetail?.mbBanner :courseDetail?.banner})`,
+          backgroundImage: `url(${isMobile ? courseDetail?.mbBanner : courseDetail?.banner})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           position: 'relative',
@@ -68,24 +67,26 @@ console.log("showTitle", showTitle)
       />
 
       {/* Sticky Title */}
-     {showTitle ?  <Box
-        sx={{
-          position: 'sticky',
-          top: 0, // Sticky at the very top of the screen
-          zIndex: 1010, // Ensure title stays above the buttons
-          backgroundColor: 'white',
-          padding: '10px 0',
-          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-          textAlign: 'center',
-          borderBottom: '1px solid #e0e0e0',
-          // Remove marginTop in mobile view
-          marginTop: 0 // Remove the top margin for mobile view to eliminate the gap
-        }}
-      >
-        <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-          {courseDetail?.name}
-        </Typography>
-      </Box> : null }
+      {showTitle ? (
+        <Box
+          sx={{
+            position: 'sticky',
+            top: 0, // Sticky at the very top of the screen
+            zIndex: 1010, // Ensure title stays above the buttons
+            backgroundColor: 'white',
+            padding: '10px 0',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            textAlign: 'center',
+            borderBottom: '1px solid #e0e0e0',
+            // Remove marginTop in mobile view
+            marginTop: 0 // Remove the top margin for mobile view to eliminate the gap
+          }}
+        >
+          <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+            {courseDetail?.name}
+          </Typography>
+        </Box>
+      ) : null}
 
       {/* Buttons Section */}
       <Box

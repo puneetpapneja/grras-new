@@ -79,6 +79,7 @@ const Courses = ({ courses = [], parent = 'Our', showTitle = false }) => {
 
 Courses.propTypes = {
   parent: PropTypes.string,
+  showTitle: PropTypes.bool,
   courses: PropTypes.arrayOf(
     PropTypes.shape({
       link: PropTypes.string,

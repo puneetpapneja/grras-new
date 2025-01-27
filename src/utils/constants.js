@@ -2457,7 +2457,7 @@ export const REDHAT = [
     title: COURSE_LABEL[SLUGS.RHCE],
     description:
       'This course is ideal for system administrators and DevOps professionals who want to advance their automation skills and enhance career opportunities.',
-    image: '/assets/images/redhat-certified-engineer-mb.png',
+    image: '/assets/images/redhat-certified-engineer-mb.png'
   },
   {
     label: COURSE_LABEL[SLUGS.DO188],

@@ -7,16 +7,13 @@ import Footer from 'components/footer';
 import BreadcrumbComponent from 'components/breadcrumb';
 const PageLayout = ({ children }) => {
   const location = useLocation();
-  useEffect(() => {
-    
-  }, []);
+  useEffect(() => {}, []);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location]);
   return (
     <Grid2 className="full-height">
-      
       <Header />
       <BreadcrumbComponent />
       {children ? children : <Outlet />}
